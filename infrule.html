@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .inference-container {
+      display: inline-block;
+      text-align: center;
+      width: max-content;
+    }
+
+    .inference-box {
+      width: 100%;
+      display: inline-block;
+    }
+
+    .premises {
+      padding-bottom: 0.2em;
+    }
+
+    .conclusion {
+      border-top: 1px solid black;
+      padding-top: 0.2em;
+    }
+  </style>
+</head>
+<body>
+
+<div class="inference-container">
+  <div class="inference-box premises">Γ ⊢ e₁ : τ₁ → τ₂    Γ ⊢ e₂ : τ₁</div>
+  <div class="inference-box conclusion">Γ ⊢ e₁ e₂ : τ₂</div>
+</div>
+
+</body>
+</html>
