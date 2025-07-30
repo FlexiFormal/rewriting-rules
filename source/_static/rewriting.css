@@ -1,5 +1,13 @@
-.place-holder {
+.placeholder {
     font-family: sans-serif;
+}
+
+.placeholder::before {
+    content: "⟨";
+}
+
+.placeholder::after {
+    content: "⟩";
 }
 
 .rewrite-rule-container {

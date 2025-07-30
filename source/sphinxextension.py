@@ -6,7 +6,7 @@ from docutils import nodes
 
 class PlaceholderRole(SphinxRole):
     def run(self):
-        node = nodes.inline(text=f'[{self.text}]')
+        node = nodes.inline(text=f'{self.text}')
         return [placeholder_node('', node)], []
 
 class placeholder_node(nodes.General, nodes.Element):
