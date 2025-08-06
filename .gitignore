@@ -2,3 +2,6 @@ build
 __pycache__
 *.swp
 .venv
+source/rules/*.html
+source/rules/*.xml
+source/rules/*.nbnf
