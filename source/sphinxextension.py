@@ -21,7 +21,7 @@ class NbnfLexer(RegexLexer):
         'root': [
             (r'\s+', Whitespace),
             (r'[{}[]()]', Punctuation),
-            (r'::=|:=|=|<-|->|\*|\+', Operator),
+            (r'::=|:=|=|<-|->|\*|\+|\|', Operator),
             (r'''('[^']*')|("[^"]*")''', String),
             (r'<<?[a-zA-Z0-9_-]*>?>', Name),
             (r'...', Name),
