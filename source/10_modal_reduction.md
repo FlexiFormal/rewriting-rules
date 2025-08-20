@@ -11,5 +11,4 @@ they occur in.
 ./rules/rule_10_01.md
 ./rules/rule_10_02.md
 ./rules/rule_10_03.md
-./rules/rule_10_04.md
 ```
