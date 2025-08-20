@@ -17,4 +17,5 @@ guarded_identifiers
 07_equality_conversion
 08_projection_reduction
 09_structure_expansion
+10_modal_reduction
 ```
