@@ -17,4 +17,6 @@ We can obtain rewrite rules from certain logical deduction rules.
 ./rules/rule_11_08.md
 ./rules/rule_11_09.md
 ./rules/rule_11_10.md
+./rules/rule_11_11.md
+./rules/rule_11_12.md
 ```
