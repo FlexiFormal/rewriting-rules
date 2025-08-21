@@ -18,4 +18,5 @@ guarded_identifiers
 08_projection_reduction
 09_structure_expansion
 10_modal_reduction
+11_logical_conversion
 ```
