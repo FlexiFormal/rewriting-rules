@@ -11,4 +11,10 @@ they occur in.
 ./rules/rule_10_01.md
 ./rules/rule_10_02.md
 ./rules/rule_10_03.md
+./rules/rule_10_04.md
+./rules/rule_10_05.md
+./rules/rule_10_06.md
+./rules/rule_10_07.md
+./rules/rule_10_08.md
+./rules/rule_10_09.md
 ```
