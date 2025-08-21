@@ -3,9 +3,9 @@ Rule 4.8: "And"-NP Aggregation
 
 
 ```{rewrite-rule}
-$x$ is (a | no) {ph}`NP`$_1$ and ... and $x$ is (a | no) {ph}`NP`$_n$
+$x$ is $d_1$@(a | no) {ph}`NP`$_1$ and ... and $x$ is $d_n$@(a | no) {ph}`NP`$_n$
 
-$x$ is (a | no) {ph}`NP`$_1$ and ... and (a | no) {ph}`NP`$_n$
+$x$ is $d_1$ {ph}`NP`$_1$ and ... and $d_n$ {ph}`NP`$_n$
 ```
 
 Examples
