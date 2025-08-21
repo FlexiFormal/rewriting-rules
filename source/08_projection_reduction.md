@@ -8,7 +8,7 @@ element of $A_i \times \dots \times A_n$ yields the following
 rewrite rule:
 
 ```{rewrite-rule}
-$\pi_i(\langle a_i, \dots, a_n\range)$
+$\pi_i(\langle a_i, \dots, a_n\rangle)$
 
 $a_i$
 ```
