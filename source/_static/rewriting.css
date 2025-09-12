@@ -1,13 +1,31 @@
-.placeholder {
+.category {
     font-family: sans-serif;
 }
 
-.placeholder::before {
+.category::before {
     content: "⟨";
 }
 
-.placeholder::after {
+.category::after {
     content: "⟩";
+}
+
+.placeholder {
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+
+.nl {
+    color: darkgreen;
+    font-style: italic;
+}
+
+.nl::before {
+    content: "'";
+}
+
+.nl::after {
+    content: "'";
 }
 
 .rewrite-rule-container {
@@ -28,3 +46,4 @@
     padding: 1px;
     text-align: center;
 }
+
