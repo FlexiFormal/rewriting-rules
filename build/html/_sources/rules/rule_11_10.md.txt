@@ -1,0 +1,27 @@
+Rule 11.10: "Or"-Idempotence Reduction
+======================================
+
+
+```{rewrite-rule}
+{ph}`Prop` : {cat}`Prop` = {nl}`$x$ is prime`
+
+{ph}`P` : {cat}`Var` = {nl}`$P$`
+
+$\vdash \forall {ph}`P`.\, {ph}`P` \vee {ph}`P` = {ph}`P`$
+
+{ph}`Prop` or {ph}`Prop`
+
+{ph}`Prop`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash \forall P.\, P \vee P = P$
+
+$x$ is prime or $x$ is prime
+
+$x$ is prime
+```

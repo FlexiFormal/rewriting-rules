@@ -1,0 +1,29 @@
+Rule 11.12: "Or"-Commutativity Conversion
+=========================================
+
+
+```{rewrite-rule}
+${ph}`Prop_1`, {ph}`Prop_2`$ : {cat}`Prop` = {nl}`$x$ is odd`, {nl}`$x$ is even`
+
+{ph}`P` : {cat}`Var` = {nl}`$P$`
+
+{ph}`Q` : {cat}`Var` = {nl}`$Q$`
+
+$\vdash \forall {ph}`P`, {ph}`Q`.\, {ph}`P` \vee {ph}`Q` = {ph}`Q` \vee {ph}`P`$
+
+{ph}`Prop_1` or {ph}`Prop_2`
+
+{ph}`Prop_2` or {ph}`Prop_1`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash \forall P, Q.\, P \vee Q = Q \vee P$
+
+$x$ is odd or $x$ is even
+
+$x$ is even or $x$ is odd
+```

@@ -1,0 +1,37 @@
+Rule 10.6: Generic Modal VP Reduction
+=====================================
+
+
+```{rewrite-rule}
+{ph}`Mod` : provable | necessary | possible = {nl}`provable`
+
+{ph}`VP` : {cat}`VP` = {nl}`contains $y$`
+
+{ph}`x` : {cat}`Term` = {nl}`$x$`
+
+it is {ph}`Mod` that {ph}`x` {ph}`VP`
+
+{ph}`x` {ph}`Mod` {ph}`VP`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+it is provable that $x$ contains $y$
+
+$x$ provably contains $y$
+```
+
+```{rewrite-rule}
+it is necessary that $x$ solves the equation
+
+$x$ necessarily solves the equation
+```
+
+```{rewrite-rule}
+it is possible $x$ entails a contradiction
+
+$x$ possibly entails a contradiction
+```

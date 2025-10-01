@@ -1,0 +1,24 @@
+Rule 4.1: "And"-AP Aggregation
+==============================
+
+
+```{rewrite-rule}
+${ph}`AP_1`, \ldots, {ph}`AP_n`$ : {cat}`AP` = {nl}`prime`, {nl}`greater than $5$`
+
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` is {ph}`AP_1` and ... and {ph}`t` is {ph}`AP_n`
+
+{ph}`t` is {ph}`AP_1` and ... and {ph}`AP_n`
+```
+
+Examples
+--------
+
+```{rewrite-rule}
+$x$ is prime and $x$ is greater than $5$
+
+$x$ is prime and greater than $5$
+```
+
+

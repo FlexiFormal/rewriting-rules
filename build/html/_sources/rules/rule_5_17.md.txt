@@ -1,0 +1,27 @@
+Rule 5.17: Term Guard Reduction
+===============================
+
+
+```{rewrite-rule}
+${ph}`t`[{ph}`a_1`, \dots, {ph}`a_n`]$ : {cat}`Term` = {nl}`${ph}`a`^2$`
+
+${ph}`y_1`, \dots, {ph}`y_n`$ : {cat}`Var` = {nl}`$y$`
+
+${ph}`P`[{ph}`b_1`, \dots, {ph}`b_n`]$ : {cat}`Pred` = {nl}`${ph}`b` \in \mathbb{N}$`
+
+{ph}`z` : {cat}`Var` = {nl}`$z$`
+
+$\{{ph}`t`[{ph}`y_1`, \dots, {ph}`y_n`] \mid {ph}`P`[{ph}`y_1`, \dots, {ph}`y_n`]\}$
+
+$\{{ph}`z` \mid \text{there exist } {ph}`y_1`, \dots, {ph}`y_n` \text{ such that } {ph}`z` = {ph}`t`[{ph}`y_1`, \dots, {ph}`y_n`] \text{ and } {ph}`P`[{ph}`y_1`, \dots, {ph}`y_n`]\}$
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\{n^2 \mid n \in \mathbb{N}\}$
+
+$\{z \mid \text{there exist an } n \text{ such that } z = n^2 \text{ and } n \in \mathbb{N}\}$
+```

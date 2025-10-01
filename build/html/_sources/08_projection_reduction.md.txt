@@ -1,0 +1,32 @@
+Section 8: Projection Reduction
+===============================
+
+Let $\pi_i$ denote the $i$-th projection from a Cartesian product
+$A_1 \times \dots \times A_n$ to its $i$-th component $A_i$.
+Applying $\beta$-reduction to such a projection applied to an
+element of $A_i \times \dots \times A_n$ yields the following
+rewrite rule:
+
+```{rewrite-rule}
+${ph}`a_1`, \dots, {ph}`a_n`$ : {cat}`Term` = {nl}`$\sin(x)$`, {nl}`$\cos(x + 1)$`
+
+{ph}`i` : {cat}`Term` = {nl}`$1 + 1$`
+
+$\vdash {ph}`i` = j$
+
+$\pi_{{ph}`i`}(\langle {ph}`a_1`, \dots, {ph}`a_n` \rangle)$
+
+{ph}`a_j`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash 1 + 1 = 2$
+
+$\pi_{1 + 1}(\langle \sin(x), \cos(x + 1) \rangle)$
+
+$\cos(x + 1)$
+```

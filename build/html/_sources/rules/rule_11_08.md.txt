@@ -1,0 +1,27 @@
+Rule 11.8: Contradiction Introduction
+=====================================
+
+
+```{rewrite-rule}
+{ph}`Prop` : {cat}`Prop` = {nl}`$x$ is prime`
+
+{ph}`P` : {cat}`Var` = {nl}`$P$`
+
+$\vdash \forall {ph}`P`.\, {ph}`P` \wedge \neg {ph}`P` = \bot$
+
+{ph}`Prop` and it is wrong that {ph}`Prop`
+
+we have a contradiction
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash \forall P.\, P \wedge \neg P = \bot$
+
+$x$ is prime and it is wrong that $x$ is prime
+
+we have a contradiction
+```

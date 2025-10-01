@@ -1,0 +1,23 @@
+Rule 10.7: Modal "True"-AP Reduction
+====================================
+
+
+```{rewrite-rule}
+{ph}`AP` : {cat}`AP` = {nl}`non-empty`
+
+{ph}`x` : {cat}`Term` = {nl}`$x$`
+
+it (is true | is the case | holds) that {ph}`x` is {ph}`AP`
+
+{ph}`x` is {ph}`AP`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+it is the case that $x$ is non-empy
+
+$x$ is non-empty
+```

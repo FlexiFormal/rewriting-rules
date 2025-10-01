@@ -1,0 +1,29 @@
+Rule 11.2: "Has"-NP Double Negation Elimination
+===============================================
+
+
+```{rewrite-rule}
+{ph}`NP` : {cat}`NP` = {nl}`element`
+
+{ph}`P` : {cat}`Var` = {nl}`$P$`
+
+{ph}`x` : {cat}`Term` = {nl}`$x$`
+
+$\vdash \forall {ph}`P`.\, \neg \neg {ph}`P` = {ph}`P`$
+
+{ph}`x` does not have no {ph}`NP`
+
+{ph}`x` has a {ph}`NP`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash \forall P.\, \neg \neg P = P$
+
+$x$ does not have no element
+
+$x$ has an element
+```

@@ -1,0 +1,49 @@
+.category {
+    font-family: sans-serif;
+}
+
+.category::before {
+    content: "⟨";
+}
+
+.category::after {
+    content: "⟩";
+}
+
+.placeholder {
+    font-family: Courier, monospace;
+    font-weight: bold;
+}
+
+.nl {
+    color: darkgreen;
+    font-style: italic;
+}
+
+.nl::before {
+    content: "'";
+}
+
+.nl::after {
+    content: "'";
+}
+
+.rewrite-rule-container {
+    margin: auto;   /* Center in parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.rewrite-rule-separator {
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid black;
+}
+
+.rewrite-line {
+    padding: 1px;
+    text-align: center;
+}
+

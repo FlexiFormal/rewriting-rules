@@ -1,0 +1,39 @@
+Rule 10.3: Generic Modal NP Reduction
+=====================================
+
+
+```{rewrite-rule}
+{ph}`Mod` : provable | necessary | possible = {nl}`provable`
+
+{ph}`Det` : a | no = {nl}`a`
+
+{ph}`NP` : {cat}`NP` = {nl}`large cardinal`
+
+{ph}`x` : {cat}`Term` = {nl}`$x$`
+
+it is {ph}`Mod` that {ph}`x` is {ph}`Det` {ph}`NP`
+
+{ph}`x` is {ph}`Mod` {ph}`Det` {ph}`NP`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+it is provable that $x$ is a large cardinal
+
+$x$ is provably a large cardinal
+```
+
+```{rewrite-rule}
+it is necessary that $x$ is an element of the unit circle
+
+$x$ is necessarily an element of the unit circle
+```
+
+```{rewrite-rule}
+it is possible $x$ is a counterexample of the Riemann Hypothesis
+
+$x$ is possibly a counterexample of the Riemann Hypothesis
+```

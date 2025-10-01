@@ -1,0 +1,29 @@
+Rule 11.7: Implication Introduction
+===================================
+
+
+```{rewrite-rule}
+${ph}`Prop_1`, {ph}`Prop_2`$ : {cat}`Prop` = {nl}`$x$ is greater than $1$`, {nl}`$x$ is prime`
+
+{ph}`P` : {cat}`Var` = {nl}`$P$`
+
+{ph}`Q` : {cat}`Var` = {nl}`$Q$`
+
+$\vdash \forall {ph}`P`, {ph}`Q`.\, {ph}`Q` \vee \neg {ph}`P` = {ph}`P` \Rightarrow {ph}`Q`$
+
+{ph}`Prop_1` or it is wrong that {ph}`Prop_2`
+
+(if {ph}`Prop_2` then | {ph}`Prop_2` implies | {ph}`Prop_2` entails) {ph}`Prop_1`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash \forall P, Q.\, Q \vee \neg P = P \Rightarrow Q$
+
+$x$ is greater than $1$ or it is wrong that $x$ is prime
+
+if $x$ is a prime number then $x$ is greater than $1$
+```

@@ -1,0 +1,25 @@
+Rule 10.2: Modal "False"-NP Reduction
+=====================================
+
+
+```{rewrite-rule}
+{ph}`Det` : a | no = {nl}`a`
+
+{ph}`NP` : {cat}`NP` = {nl}`prime number`
+
+{ph}`x` : {cat}`Term` = {nl}`$x$`
+
+it (is wrong | is false | is not the case | does not hold) that {ph}`x` is {ph}`Det` {ph}`NP`
+
+{ph}`x` is not {ph}`Det` {ph}`NP`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+it does not hold that $n$ is a prime number
+
+$n$ is not a prime number
+```

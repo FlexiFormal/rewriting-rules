@@ -1,0 +1,29 @@
+Rule 11.1: "Is"-NP Double Negation Elimination
+==============================================
+
+
+```{rewrite-rule}
+{ph}`NP` : {cat}`NP` = {nl}`prime number`
+
+{ph}`P` : {cat}`Var` = {nl}`$P$`
+
+{ph}`x` : {cat}`Term` = {nl}`$x$`
+
+$\vdash \forall {ph}`P`.\, \neg \neg {ph}`P` = {ph}`P`$
+
+{ph}`x` is not no {ph}`NP`
+
+{ph}`x` is a {ph}`NP`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash \forall P.\, \neg \neg P = P$
+
+$x$ is not no prime number
+
+$x$ is a prime number
+```

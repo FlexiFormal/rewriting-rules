@@ -1,0 +1,25 @@
+Rule 10.1: Modal "True"-NP Reduction
+====================================
+
+
+```{rewrite-rule}
+{ph}`Det` : a | no = {nl}`a`
+
+{ph}`NP` : {cat}`NP` = {nl}`non-empty set`
+
+{ph}`x` : {cat}`Term` = {nl}`$x$`
+
+it (is true | is the case | holds) that {ph}`x` is {ph}`Det` {ph}`NP`
+
+{ph}`x` is {ph}`Det` {ph}`NP`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+it is the case that $x$ is a non-empy set
+
+$x$ is a non-empty set
+```

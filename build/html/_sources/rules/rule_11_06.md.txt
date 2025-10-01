@@ -1,0 +1,27 @@
+Rule 11.6: Negation Introduction
+================================
+
+
+```{rewrite-rule}
+{ph}`Prop` : {cat}`Prop` = {nl}`$x$ is a prime number`
+
+{ph}`P` : {cat}`Var` = {nl}`$P$`
+
+$\vdash \forall {ph}`P`.\, {ph}`P` \Rightarrow \bot = \neg {ph}`P`$
+
+(if {ph}`Prop` then we have | {ph}`Prop` entails | {ph}`Prop` implies) a contradiction
+
+it is wrong that {ph}`Prop`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash \forall P.\, P \Rightarrow \bot = \neg P$
+
+if $x$ is a prime number then we have a contradiction
+
+it is wrong that $x$ is a prime number
+```

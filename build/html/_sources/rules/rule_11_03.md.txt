@@ -1,0 +1,29 @@
+Rule 11.3: Adjective Double Negation Elimination
+================================================
+
+
+```{rewrite-rule}
+{ph}`adjective` : {cat}`adjective` = {nl}`empty`
+
+{ph}`P` : {cat}`Var` = {nl}`$P$`
+
+{ph}`x` : {cat}`Term` = {nl}`$x$`
+
+$\vdash \forall {ph}`P`.\, \neg \neg {ph}`P` = {ph}`P`$
+
+{ph}`x` is not non-{ph}`adjective`
+
+{ph}`x` is {ph}`adjective`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash \forall P.\, \neg \neg P = P$
+
+$x$ is not non-empty
+
+$x$ is empty
+```

@@ -1,0 +1,29 @@
+Rule 11.4: AP Double Negation Elimination
+=========================================
+
+
+```{rewrite-rule}
+{ph}`AP` : {cat}`AP` = {nl}`greater than $5$`
+
+{ph}`P` : {cat}`Var` = {nl}`$P$`
+
+{ph}`x` : {cat}`Term` = {nl}`$x$`
+
+$\vdash \forall {ph}`P`.\, \neg \neg {ph}`P` = {ph}`P`$
+
+{ph}`x` is not not {ph}`AP`
+
+{ph}`x` is {ph}`AP`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash \forall P.\, \neg \neg P = P$
+
+$x$ is not not greater than $5$
+
+$x$ is greater than $5$
+```

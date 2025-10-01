@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Rule 11.11: “And”-Commutativity Conversion &#8212; rewriting-rules  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="../_static/rewriting.css?v=2a054a02" />
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Rule 11.12: “Or”-Commutativity Conversion" href="rule_11_12.html" />
+    <link rel="prev" title="Rule 11.10: “Or”-Idempotence Reduction" href="rule_11_10.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section class="tex2jax_ignore mathjax_ignore" id="rule-11-11-and-commutativity-conversion">
+<h1>Rule 11.11: “And”-Commutativity Conversion<a class="headerlink" href="#rule-11-11-and-commutativity-conversion" title="Link to this heading">¶</a></h1>
+<div class="rewrite-rule-container"><div class="rewrite-line"><span class="math notranslate nohighlight">\({ph}`Prop_1`, {ph}`Prop_2`\)</span> : <span class="category"><span>Prop</span></span> = <span class="nl"><span><span class="math notranslate nohighlight">\(x\)</span> is prime</span></span>, <span class="nl"><span><span class="math notranslate nohighlight">\(x\)</span> is even</span></span></div><div class="rewrite-line"><span class="placeholder"><span>P</span></span> : <span class="category"><span>Var</span></span> = <span class="nl"><span><span class="math notranslate nohighlight">\(P\)</span></span></span></div><div class="rewrite-line"><span class="placeholder"><span>Q</span></span> : <span class="category"><span>Var</span></span> = <span class="nl"><span><span class="math notranslate nohighlight">\(Q\)</span></span></span></div><div class="rewrite-line"><span class="math notranslate nohighlight">\(\vdash \forall {ph}`P`, {ph}`Q`.\, {ph}`P` \wedge {ph}`Q` = {ph}`Q` \wedge {ph}`P`\)</span></div><div class="rewrite-line"><span class="placeholder"><span>Prop<sub>1</sub></span></span> and <span class="placeholder"><span>Prop<sub>2</sub></span></span></div><hr class="rewrite-rule-separator"/><div class="rewrite-line"><span class="placeholder"><span>Prop<sub>2</sub></span></span> and <span class="placeholder"><span>Prop<sub>1</sub></span></span></div></div><section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
+<div class="rewrite-rule-container"><div class="rewrite-line"><span class="math notranslate nohighlight">\(\vdash \forall P, Q.\, P \wedge Q = Q \wedge P\)</span></div><div class="rewrite-line"><span class="math notranslate nohighlight">\(x\)</span> is prime and <span class="math notranslate nohighlight">\(x\)</span> is even</div><hr class="rewrite-rule-separator"/><div class="rewrite-line"><span class="math notranslate nohighlight">\(x\)</span> is even and <span class="math notranslate nohighlight">\(x\)</span> is prime</div></div></section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">rewriting-rules</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../guarded_identifiers.html">Guarded Identifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_definition_reduction.html">Section 1: Definition Reduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_definition_reduction.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02_variable_reduction.html">Section 2: Variable Reduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_determiner_reduction.html">Section 3: Determiner Reduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_aggregation.html">Section 4: Aggregation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_comprehension_term_reduction.html">Section 5: Comprehension Term Reduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06_iota_conversion.html">Section 6: <span class="math notranslate nohighlight">\(\iota\)</span>-Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_equality_conversion.html">Section 7: Equality Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_projection_reduction.html">Section 8: Projection Reduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_structure_expansion.html">Section 9: Structure Expansion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_modal_reduction.html">Section 10: Modal Reduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../11_logical_conversion.html">Section 11: Logical Conversion</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="rule_11_01.html">Rule 11.1: “Is”-NP Double Negation Elimination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_11_02.html">Rule 11.2: “Has”-NP Double Negation Elimination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_11_03.html">Rule 11.3: Adjective Double Negation Elimination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_11_04.html">Rule 11.4: AP Double Negation Elimination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_11_05.html">Rule 11.5: VP Double Negation Elimination</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_11_06.html">Rule 11.6: Negation Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_11_07.html">Rule 11.7: Implication Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_11_08.html">Rule 11.8: Contradiction Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_11_09.html">Rule 11.9: “And”-Idempotence Reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_11_10.html">Rule 11.10: “Or”-Idempotence Reduction</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Rule 11.11: “And”-Commutativity Conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_11_12.html">Rule 11.12: “Or”-Commutativity Conversion</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../11_logical_conversion.html">Section 11: Logical Conversion</a><ul>
+      <li>Previous: <a href="rule_11_10.html" title="previous chapter">Rule 11.10: “Or”-Idempotence Reduction</a></li>
+      <li>Next: <a href="rule_11_12.html" title="next chapter">Rule 11.12: “Or”-Commutativity Conversion</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, KWARC.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/rules/rule_11_11.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
