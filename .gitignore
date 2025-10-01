@@ -1,4 +1,4 @@
-build/doctree
+build/doctrees
 __pycache__
 *.swp
 .venv
