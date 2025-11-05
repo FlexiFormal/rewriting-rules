@@ -7,7 +7,7 @@ Rule 9.2: Sequence Structure Expansion
 
 {ph}`t` : {cat}`symbolic term` = {nl}`$\langle q, c, q' \rangle$`
 
-${ph}`x_1`, \dots, {ph}`x_n`$ : {cat}`Var` = {nl}`$t_1$`, $\dots$, {nl}`$t_n$`
+{ph}`x_1`, ..., {ph}`x_n` : {cat}`Var` = {nl}`$t_1$`, $\dots$, {nl}`$t_n$`
 
 {ph}`i` : {cat}`Var` = {nl}`$i$`
 

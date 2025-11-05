@@ -3,9 +3,19 @@ Rule 5.4: "Let"-AP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`let` $x \in \{y \mid \varphi[y]\}$ be {ph}`AP`
+{ph}`let` : {cat}`let` = {nl}`let`
 
-{ph}`let` $x$ be {ph}`AP` such that $\varphi[x]$
+{ph}`AP` : {cat}`AP` = {nl}`imaginary`
+
+{ph}`x` : {cat}`Var` = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$z$`
+
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+
+{ph}`let` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ be {ph}`AP`
+
+{ph}`let` {ph}`x` be {ph}`AP` such that ${ph}`P`[{ph}`x`]$
 ```
 
 

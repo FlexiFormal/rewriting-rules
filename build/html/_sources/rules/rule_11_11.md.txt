@@ -3,7 +3,7 @@ Rule 11.11: "And"-Commutativity Conversion
 
 
 ```{rewrite-rule}
-${ph}`Prop_1`, {ph}`Prop_2`$ : {cat}`Prop` = {nl}`$x$ is prime`, {nl}`$x$ is even`
+{ph}`Prop_1`, {ph}`Prop_2` : {cat}`Prop` = {nl}`$x$ is prime`, {nl}`$x$ is even`
 
 {ph}`P` : {cat}`Var` = {nl}`$P$`
 

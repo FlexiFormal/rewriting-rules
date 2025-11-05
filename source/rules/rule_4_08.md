@@ -3,9 +3,15 @@ Rule 4.8: "And"-NP Aggregation
 
 
 ```{rewrite-rule}
-$x$ is $d_1$@(a | no) {ph}`NP`$_1$ and ... and $x$ is $d_n$@(a | no) {ph}`NP`$_n$
+{ph}`Det_1`, $\ldots$, {ph}`Det_n` : a | no = {nl}`a`, {nl}`no`
 
-$x$ is $d_1$ {ph}`NP`$_1$ and ... and $d_n$ {ph}`NP`$_n$
+{ph}`NP_1`, $\ldots$, {ph}`NP_n` : {cat}`NP` = {nl}`prime number`, {nl}`even number`
+
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` is {ph}`Det_1` {ph}`NP_1` and ... and {ph}`t` is {ph}`Det_n` {ph}`NP_n`
+
+{ph}`t` is {ph}`Det_1` {ph}`NP_1` and ... and {ph}`Det_n` {ph}`NP_n`
 ```
 
 Examples

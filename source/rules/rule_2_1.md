@@ -3,9 +3,15 @@ Rule 2.1: Adjective Variable Reduction
 
 
 ```{rewrite-rule}
-{ph}`NP` $x$ (such that $x$ is | with $x$ being) {ph}`AP`.
+{ph}`NP` : {cat}`NP` = {nl}`an input symbol`
 
-{ph}`NP` $x$ that is {ph}`AP`.
+{ph}`t` : {cat}`Term` = {nl}`$a$`
+
+{ph}`AP` : {cat}`AP` = {nl}`applicable in $q$`
+
+{ph}`NP` {ph}`t` (such that {ph}`t` is | with {ph}`t` being) {ph}`AP`
+
+{ph}`NP` {ph}`t` that is {ph}`AP`
 ```
 
 

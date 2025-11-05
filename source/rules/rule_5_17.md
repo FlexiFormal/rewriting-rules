@@ -3,9 +3,17 @@ Rule 5.17: Term Guard Reduction
 
 
 ```{rewrite-rule}
-$\{t[y_1,\dots,y_n] \mid \varphi[y_1,\dots,y_n]\}$
+{ph}`t`[{ph}`a_1`, ..., {ph}`a_n`] : {cat}`Term` = {nl}`${ph}`a`^2$`
 
-$\{z \mid \text{there exist } y_1,\dots,y_n \text{ such that } z = t[y_1,\dots,y_n] \text{ and } \varphi[y_1,\dots,y_n]\}$
+{ph}`y_1`, ..., {ph}`y_n` : {cat}`Var` = {nl}`$y$`
+
+{ph}`P`[{ph}`b_1`, ..., {ph}`b_n`] : {cat}`Pred` = {nl}`${ph}`b` \in \mathbb{N}$`
+
+{ph}`z` : {cat}`Var` = {nl}`$z$`
+
+$\{{ph}`t`[{ph}`y_1`, \dots, {ph}`y_n`] \mid {ph}`P`[{ph}`y_1`, \dots, {ph}`y_n`]\}$
+
+$\{{ph}`z` \mid \text{there exist } {ph}`y_1`, \dots, {ph}`y_n` \text{ such that } {ph}`z` = {ph}`t`[{ph}`y_1`, \dots, {ph}`y_n`] \text{ and } {ph}`P`[{ph}`y_1`, \dots, {ph}`y_n`]\}$
 ```
 
 

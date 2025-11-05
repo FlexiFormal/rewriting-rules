@@ -8,7 +8,25 @@ element of $A_i \times \dots \times A_n$ yields the following
 rewrite rule:
 
 ```{rewrite-rule}
-$\pi_i(\langle a_i, \dots, a_n\rangle)$
+{ph}`a_1`, ..., {ph}`a_n` : {cat}`Term` = {nl}`$\sin(x)$`, {nl}`$\cos(x + 1)$`
 
-$a_i$
+{ph}`i` : {cat}`Term` = {nl}`$1 + 1$`
+
+$\vdash {ph}`i` = j$
+
+$\pi_{{ph}`i`}(\langle {ph}`a_1`, \dots, {ph}`a_n` \rangle)$
+
+{ph}`a_j`
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash 1 + 1 = 2$
+
+$\pi_{1 + 1}(\langle \sin(x), \cos(x + 1) \rangle)$
+
+$\cos(x + 1)$
 ```

@@ -3,9 +3,15 @@ Rule 4.14: "Neither"-NP Aggregation
 
 
 ```{rewrite-rule}
-$x$ is not $d_1$@(a | no) {ph}`NP`$_1$ and ... and $x$ is not $d_n$@(a | no) {ph}`NP`$_n$
+{ph}`Det_1`, $\ldots$, {ph}`Det_n` : a | no = {nl}`a`, {nl}`no`
 
-$x$ is neither $d_1$ {ph}`NP`$_1$ nor ... nor $d_n$ {ph}`NP`$_n$
+{ph}`NP_1`, $\ldots$, {ph}`NP_n` : {cat}`NP` = {nl}`prime`, {nl}`even number`
+
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` is not {ph}`Det_1` {ph}`NP_1` and ... and {ph}`t` is not {ph}`Det_n` {ph}`NP_n`
+
+{ph}`t` is neither {ph}`Det_1` {ph}`NP_1` nor ... nor {ph}`Det_n` {ph}`NP_n`
 ```
 
 Examples

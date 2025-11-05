@@ -3,13 +3,13 @@ Rule 5.19: Relation-Term Guard Reduction
 
 
 ```{rewrite-rule}
-${ph}`R`[{ph}`a`]$ : {cat}`Guarded Identifier` = {nl}`${ph}`a` \in \mathbb{N} \times \mathbb{N}$`
+{ph}`R`[{ph}`a`] : {cat}`Guarded Identifier` = {nl}`${ph}`a` \in \mathbb{N} \times \mathbb{N}$`
 
-${ph}`t`[{ph}`b_1`, \dots, {ph}`b_n`]$ : {cat}`Term` = {nl}`$\langle {ph}`b_1`, {ph}`b_2` \rangle$`
+{ph}`t`[{ph}`b_1`, ..., {ph}`b_n`] : {cat}`Term` = {nl}`$\langle {ph}`b_1`, {ph}`b_2` \rangle$`
 
 {ph}`y` : {cat}`Var` = {nl}`$y$`
 
-${ph}`P`[{ph}`c_1`, \dots, {ph}`c_n`]$ : {cat}`Pred` = {nl}`{ph}`c_1` is a prime divisor of {ph}`c_2``
+{ph}`P`[{ph}`c_1`, ..., {ph}`c_n`] : {cat}`Pred` = {nl}`{ph}`c_1` is a prime divisor of {ph}`c_2``
 
 {ph}`z` : {cat}`Var` = {nl}`$z$`
 

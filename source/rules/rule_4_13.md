@@ -3,9 +3,13 @@ Rule 4.13: "Either"-VP Aggregation
 
 
 ```{rewrite-rule}
-$x$ {ph}`VP`$_1$ or ... or $x$ {ph}`VP`$_n$ (and | but) $x$ does not both {ph}`VP`$_1$ and ... and {ph}`VP`$_n$
+{ph}`VP_1`, $\ldots$, {ph}`VP_n` : {cat}`VP` = {nl}`contain $y$`, {nl}`include $z$`
 
-$x$ either {ph}`VP`$_1$ or ... or {ph}`VP`$_n$
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` {ph}`VP_1` or ... or {ph}`t` {ph}`VP_n` (and | but) {ph}`t` does not both {ph}`VP_1` and ... and {ph}`VP_n`
+
+{ph}`t` either {ph}`VP_1` or ... or {ph}`VP_n`
 ```
 
 Examples

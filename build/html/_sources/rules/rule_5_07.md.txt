@@ -11,7 +11,7 @@ Rule 5.7: "Choose"-NP Comprehension Term Reduction
 
 {ph}`y` : {cat}`Var` = {nl}`$z$`
 
-${ph}`P`[{ph}`a`]$ : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
 
 {ph}`choose` a ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ that is a {ph}`NP`
 

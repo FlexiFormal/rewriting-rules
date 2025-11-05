@@ -3,9 +3,15 @@ Rule 5.21: Subset-NP Guard Reduction
 
 
 ```{rewrite-rule}
-subset [$x$] of $\{y \mid y \text{ is a }${ph}`NP`$\}$
+{ph}`NP` : {cat}`NP` = {nl}`complex number`
 
-set [$x$] of {ph}`NP`
+{ph}`opt_x` : [{cat}`Var`] = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$y$`
+
+subset {ph}`opt_x` of $\{{ph}`y` \mid {ph}`y` \text{ is a }{ph}`NP`\}$
+
+set {ph}`opt_x` of {ph}`NP`
 ```
 
 

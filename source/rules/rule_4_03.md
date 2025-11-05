@@ -3,9 +3,13 @@ Rule 4.3: "And"-VP Aggregation
 
 
 ```{rewrite-rule}
-$x$ {ph}`VP`$_1$ and ... and $x$ {ph}`VP`$_n$
+{ph}`VP_1`, ..., {ph}`VP_n` : {cat}`VP` = {nl}`intersects with $y$`, {nl}`contains $z$`
 
-$x$ {ph}`VP`$_1$ and ... and {ph}`VP`$_n$
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` {ph}`VP_1` and ... and $x$ {ph}`VP_n`
+
+{ph}`t` {ph}`VP_1` and ... and {ph}`VP_n`
 ```
 
 Examples

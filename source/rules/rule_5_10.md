@@ -3,9 +3,19 @@ Rule 5.10: "Choose"-PP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`choose` a $x \in \{y \mid \varphi[y]\}$ with {ph}`PP`
+{ph}`choose` : {cat}`choose` = {nl}`choose`
 
-{ph}`choose` a $x$ with $\varphi[x]$ and {ph}`PP`
+{ph}`Prop` : {cat}`Prop` = {nl}`$\Re(x) > 0$`
+
+{ph}`x` : {cat}`Var` = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$z$`
+
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+
+{ph}`choose` a ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ with {ph}`Prop`
+
+{ph}`choose` a {ph}`x` with ${ph}`P`[{ph}`x`]$ and {ph}`Prop`
 ```
 
 

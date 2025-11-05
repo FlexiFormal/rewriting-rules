@@ -3,7 +3,7 @@ Rule 11.7: Implication Introduction
 
 
 ```{rewrite-rule}
-${ph}`Prop_1`, {ph}`Prop_2`$ : {cat}`Prop` = {nl}`$x$ is greater than $1$`, {nl}`$x$ is prime`
+{ph}`Prop_1`, {ph}`Prop_2` : {cat}`Prop` = {nl}`$x$ is greater than $1$`, {nl}`$x$ is prime`
 
 {ph}`P` : {cat}`Var` = {nl}`$P$`
 

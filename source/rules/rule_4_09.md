@@ -3,9 +3,15 @@ Rule 4.9: "Or"-NP Aggregation
 
 
 ```{rewrite-rule}
-$x$ is $d_1$@(a | no) {ph}`NP`$_1$ or ... or $x$ is $d_n$@(a | no) {ph}`NP`$_n$
+{ph}`Det_1`, $\ldots$, {ph}`Det_n` : a | no = {nl}`a`, {nl}`a`
 
-$x$ is $d_1$ {ph}`NP`$_1$ or ... or $d_n$ {ph}`NP`$_n$
+{ph}`NP_1`, $\ldots$, {ph}`NP_n` : {cat}`NP` = {nl}`proper class`, {nl}`set`
+
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` is {ph}`Det_1` {ph}`NP_1` or ... or {ph}`t` is {ph}`Det_n` {ph}`NP_n`
+
+{ph}`t` is {ph}`Det_1` {ph}`NP_1` or ... or {ph}`Det_n` {ph}`NP_n`
 ```
 
 Examples

@@ -3,9 +3,11 @@ Rule 4.17: "Either"-PP Aggregation
 
 
 ```{rewrite-rule}
-{ph}`PP`$_1$ or ... or {ph}`PP`$_n$ (and | but) (is wrong | is false | is not the case | does not hold) that both {ph}`PP`$_1$ and ... and that {ph}`PP`$_n$
+{ph}`VP_1`, $\ldots$, {ph}`VP_n` : {cat}`VP` = {nl}`$x$ is prime`, {nl}`$x$ and $y$ have a common divisor`
 
-either {ph}`PP`$_1$ or ... or {ph}`PP`$_n$
+{ph}`Prop_1` or ... or {ph}`Prop_n` (and | but) (is wrong | is false | is not the case | does not hold) that both {ph}`Prop_n` and ... and that {ph}`Prop_n`
+
+either {ph}`Prop_1` or ... or {ph}`Prop_n`
 ```
 
 Examples

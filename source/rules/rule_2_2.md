@@ -3,9 +3,15 @@ Rule 2.2: Verb Variable Reduction
 
 
 ```{rewrite-rule}
-{ph}`NP` $x$ such that {ph}`VP`.
+{ph}`NP` : {cat}`NP` = {nl}`a prime number`
 
-{ph}`NP` $x$ that {ph}`VP`.
+{ph}`t` : {cat}`Term` = {nl}`$p$`
+
+{ph}`VP` : {cat}`VP` = {nl}`divides $n$`
+
+{ph}`NP` {ph}`t` such that {ph}`t` {ph}`VP`
+
+{ph}`NP` {ph}`t` that {ph}`VP`
 ```
 
 

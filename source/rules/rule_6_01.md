@@ -3,7 +3,21 @@ Rule 6.1: $\iota_\in$-Reduction
 
 
 ```{rewrite-rule}
-$b \in \{a\}$
+{ph}`a` : {cat}`Term` = {nl}`$0$`
 
-$b = a$
+{ph}`b` : {cat}`Term` = {nl}`$b$`
+
+${ph}`b` \in \{{ph}`a`\}$
+
+${ph}`b` = {ph}`a`$
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$b \in \{0\}$
+
+$b = 0$
 ```

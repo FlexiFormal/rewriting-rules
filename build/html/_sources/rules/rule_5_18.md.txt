@@ -3,11 +3,11 @@ Rule 5.18: Relation Guard Reduction
 
 
 ```{rewrite-rule}
-${ph}`R`[{ph}`a`]$ : {cat}`Guarded Identifier` = {nl}`$1 \leq {ph}`a` \leq n$`
+{ph}`R`[{ph}`a`] : {cat}`Guarded Identifier` = {nl}`$1 \leq {ph}`a` \leq n$`
 
 {ph}`y` : {cat}`Var` = {nl}`$y$`
 
-${ph}`P`[{ph}`b`]$ : {cat}`Pred` = {nl}`$1/{ph}`b` < \varepsilon$`
+{ph}`P`[{ph}`b`] : {cat}`Pred` = {nl}`$1/{ph}`b` < \varepsilon$`
 
 $\{{ph}`R`[{ph}`y`] \mid {ph}`P`[{ph}`y`]\}$
 

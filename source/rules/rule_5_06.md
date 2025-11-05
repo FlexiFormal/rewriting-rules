@@ -3,9 +3,17 @@ Rule 5.6: "Choose" Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`choose` a $x \in \{y \mid \varphi[y]\}$
+{ph}`choose` : {cat}`choose` = {nl}`choose`
 
-{ph}`choose` a $x$ with $\varphi[x]$
+{ph}`x` : {cat}`Var` = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$z$`
+
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+
+{ph}`choose` a ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$
+
+{ph}`choose` a {ph}`x` with ${ph}`P`[{ph}`x`]$
 ```
 
 

@@ -3,11 +3,29 @@ Rule 6.3: Singleton Conversion
 
 
 ```{rewrite-rule}
-$\vdash |A| = 1$
+{ph}`a` : {cat}`Term` = {nl}`$2$`
 
-$\vdash a \in A$
+{ph}`A` : {cat}`Term` = {nl}`$\{p \mid p \text{ is an even prime}\}$`
 
-$A$
+$\vdash |{ph}`A`| = 1$
 
-$\{a\}$
+$\vdash {ph}`a` \in {ph}`A`$
+
+{ph}`A`
+
+$\{{ph}`a`\}$
+```
+
+
+Examples
+--------
+
+```{rewrite-rule}
+$\vdash |\{p \mid p \text{ is an even prime}\}| = 1$
+
+$\vdash 2 \in \{p \mid p \text{ is an even prime}\}$
+
+$\{p \mid p \text{ is an even prime}\}$
+
+$\{2\}$
 ```

@@ -4,11 +4,15 @@ Section 7: Equality Conversion
 Provalby equal expressions can be replaced by each other:
 
 ```{rewrite-rule}
-$\vdash A = A'$
+{ph}`A` : {cat}`Term` = {nl}`$\bigcup_{n \in \mathbb{N}} R^n$`
 
-$A$
+{ph}`B` : {cat}`Term` = {nl}`$R^+$`
 
-$A'$
+$\vdash {ph}`A` = {ph}`B`$
+
+{ph}`A`
+
+{ph}`B`
 ```
 
 

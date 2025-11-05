@@ -3,9 +3,17 @@ Rule 5.1: "Then" Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`then` $x \in \{y \mid \varphi[y]\}$
+{ph}`then` : {cat}`then` = {nl}`assume`
 
-{ph}`then` $\varphi[x]$
+{ph}`x` : {cat}`Var` = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$z$`
+
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}``{ph}`a`$^n = 1$ for some $n \in \mathbb{N}$``
+
+{ph}`then` {ph}`x` $\in \{${ph}`y` $\mid$ {ph}`P`$[${ph}`y`$]\}$
+
+{ph}`then` {ph}`P`$[${ph}`x`$]$
 ```
 
 

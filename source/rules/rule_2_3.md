@@ -1,13 +1,16 @@
 Rule 2.3: Atom Variable Reduction
 =================================
 
-Let $R[x]$ be a [guarded identifier](/guarded_identifiers.md).
-
-
 ```{rewrite-rule}
-{ph}`NP` $x$ (such that | with) $R[x]$.
+{ph}`NP` : {cat}`NP` = {nl}`a state`
 
-{ph}`NP` $R[x]$.
+{ph}`t` : {cat}`Term` = {nl}`$q$`
+
+{ph}`R`$[${ph}`x`$]$ : {cat}`guarded identifier` = {nl}``{ph}`x` $\in Q \setminus F$``
+
+{ph}`NP` {ph}`t` (such that | with) {ph}`R`$[${ph}`t`$]$
+
+{ph}`NP` {ph}`R`$[${ph}`t`$]$
 ```
 
 

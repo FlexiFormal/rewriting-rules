@@ -13,7 +13,7 @@ Rule 5.14: Determiner-VP Comprehension Term Reduction
 
 {ph}`y` : {cat}`Var` = {nl}`$z$`
 
-${ph}`P`[{ph}`a`]$ : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
 
 {ph}`Det` {ph}`opt_NP_or_AP` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ that {ph}`VP`
 

@@ -3,9 +3,15 @@ Rule 4.15: "Either"-NP Aggregation
 
 
 ```{rewrite-rule}
-$x$ is $d_1$@(a | no) {ph}`NP`$_1$ or ... or $x$ is $d_n$@(a | no) {ph}`NP`$_n$ (and | but) $x$ is not both $d_1$ {ph}`VP`$_1$ and ... and $d_n$ {ph}`VP`$_n$
+{ph}`Det_1`, $\ldots$, {ph}`Det_n` : a | no = {nl}`a`, {nl}`no`
 
-$x$ is either $d_1$ {ph}`NP`$_1$ or ... or $d_n$ {ph}`NP`$_n$
+{ph}`NP_1`, $\ldots$, {ph}`NP_n` : {cat}`NP` = {nl}`prime`, {nl}`even number`
+
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` is {ph}`Det_1` {ph}`NP_1` or ... or {ph}`t` is {ph}`Det_n` {ph}`NP_n` : {cat}`NP` (and | but) {ph}`t` is not both {ph}`Det_1` {ph}`NP_1` and ... and {ph}`Det_n` {ph}`NP_n`
+
+{ph}`t` is either {ph}`Det_1` {ph}`NP_1` or ... or {ph}`Det_n` {ph}`NP_n`
 ```
 
 Examples

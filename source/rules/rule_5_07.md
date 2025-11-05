@@ -3,9 +3,19 @@ Rule 5.7: "Choose"-NP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`choose` a $x \in \{y \mid \varphi[y]\}$ that is a {ph}`NP`
+{ph}`choose` : {cat}`choose` = {nl}`choose`
 
-{ph}`choose` a {ph}`NP` $x$ with $\varphi[x]$
+{ph}`NP` : {cat}`NP` = {nl}`real number`
+
+{ph}`x` : {cat}`Var` = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$z$`
+
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+
+{ph}`choose` a ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ that is a {ph}`NP`
+
+{ph}`choose` a {ph}`NP` {ph}`x` with ${ph}`P`[{ph}`x`]$
 ```
 
 

@@ -3,9 +3,17 @@ Rule 5.2: "Let" Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`let` $x \in \{y \mid \varphi[y]\}$
+{ph}`let` : {cat}`let` = {nl}`let`
 
-{ph}`let` $x$ be an element such that $\varphi[x]$
+{ph}`x` : {cat}`Var` = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$z$`
+
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+
+{ph}`let` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$
+
+{ph}`let` {ph}`x` be an element such that ${ph}`P`[{ph}`x`]$
 ```
 
 

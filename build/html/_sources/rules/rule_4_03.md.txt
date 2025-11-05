@@ -3,7 +3,7 @@ Rule 4.3: "And"-VP Aggregation
 
 
 ```{rewrite-rule}
-${ph}`VP_1`, \ldots, {ph}`VP_n`$ : {cat}`VP` = {nl}`intersects with $y$`, {nl}`contains $z$`
+{ph}`VP_1`, ..., {ph}`VP_n` : {cat}`VP` = {nl}`intersects with $y$`, {nl}`contains $z$`
 
 {ph}`t` : {cat}`Term` = {nl}`$x$`
 

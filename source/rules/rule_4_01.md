@@ -3,9 +3,13 @@ Rule 4.1: "And"-AP Aggregation
 
 
 ```{rewrite-rule}
-$x$ is {ph}`AP`$_1$ and ... and $x$ is {ph}`AP`$_n$
+{ph}`AP_1`, ..., {ph}`AP_n` : {cat}`AP` = {nl}`prime`, {nl}`greater than $5$`
 
-$x$ is {ph}`AP`$_1$ and ... and {ph}`AP`$_n$
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` is {ph}`AP_1` and ... and {ph}`t` is {ph}`AP_n`
+
+{ph}`t` is {ph}`AP_1` and ... and {ph}`AP_n`
 ```
 
 Examples

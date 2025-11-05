@@ -3,9 +3,13 @@ Rule 4.11: "Either"-AP Aggregation
 
 
 ```{rewrite-rule}
-$x$ is {ph}`AP`$_1$ or ... or $x$ is {ph}`AP`$_n$ (and | but) $x$ is not both {ph}`AP`$_1$ and ... and {ph}`AP`$_n$
+{ph}`AP_1`, $\ldots$, {ph}`AP_n` : {cat}`AP` = {nl}`odd`, {nl}`prime`
 
-$x$ is either {ph}`AP`$_1$ or ... or {ph}`AP`$_n$
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` is {ph}`AP_1` or ... or {ph}`t` is {ph}`AP_n` (and | but) {ph}`t` is not both {ph}`AP_1` and ... and {ph}`AP_n`
+
+{ph}`t` is either {ph}`AP_1` or ... or {ph}`AP_n`
 ```
 
 Examples

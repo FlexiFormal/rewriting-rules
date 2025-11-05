@@ -3,9 +3,21 @@ Rule 5.14: Determiner-VP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`Det` [{ph}`NP` | {ph}`AP`] $x \in \{y \mid \varphi[y]\}$ that {ph}`VP`
+{ph}`Det` : {cat}`Det` = {nl}`all`
 
-{ph}`Det` [{ph}`NP` | {ph}`AP`] $x$ that {ph}`VP` with $\varphi[x]$
+{ph}`opt_NP_or_AP` : [{cat}`NP` | {cat}`AP`] = {nl}``
+
+{ph}`VP` : {cat}`VP` = {nl}`solve the equation $E$`
+
+{ph}`x` : {cat}`Var` = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$z$`
+
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+
+{ph}`Det` {ph}`opt_NP_or_AP` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ that {ph}`VP`
+
+{ph}`Det` {ph}`opt_NP_or_AP` {ph}`x` that {ph}`VP` with ${ph}`P`[{ph}`x`]$
 ```
 
 

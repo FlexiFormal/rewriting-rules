@@ -3,9 +3,13 @@ Rule 4.4: "Or"-VP Aggregation
 
 
 ```{rewrite-rule}
-$x$ {ph}`VP`$_1$ or ... or $x$ {ph}`VP`$_n$
+{ph}`VP_1`, ..., {ph}`VP_n` : {cat}`VP`= {nl}`intersects with $y$`, {nl}`contains $z$`
 
-$x$ {ph}`VP`$_1$ or ... or {ph}`VP`$_n$
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` {ph}`VP_1` or ... or {ph}`t` {ph}`VP_n`
+
+{ph}`t` {ph}`VP_1` or ... or {ph}`VP_n`
 ```
 
 Examples

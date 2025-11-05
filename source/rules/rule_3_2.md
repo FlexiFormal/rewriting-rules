@@ -1,12 +1,18 @@
 Rule 3.2: Atom Determiner Reduction
 ===================================
 
-Let $R[x]$ be a [guarded identifier](/guarded_identifiers.md).
-
 ```{rewrite-rule}
-{ph}`Det` [{ph}`NP`] $x$ with $R[x]$
+{ph}`Det` : {cat}`Det` = {nl}`those`
 
-{ph}`Det` [{ph}`NP`] $R[x]$
+{ph}`opt_NP` : [{cat}`NP`] = {nl}`states`
+
+{ph}`t` : {cat}`Term` = {nl}`$q$`
+
+{ph}`R`$[${ph}`x`$]$ : {cat}`guarded identifier` = {nl}``{ph}`x` $\in Q \setminus F$``
+
+{ph}`Det` {ph}`opt_NP` {ph}`t` with {ph}`R`$[${ph}`t`$]$
+
+{ph}`Det` {ph}`opt_NP` {ph}`R`$[${ph}`t`$]$
 ```
 
 Example:

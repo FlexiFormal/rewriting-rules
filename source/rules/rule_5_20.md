@@ -3,9 +3,15 @@ Rule 5.20: Element-NP Guard Reduction
 
 
 ```{rewrite-rule}
-element [$x$] of $\{y \mid y \text{ is a {ph}`NP`}\}$
+{ph}`NP` : {cat}`NP` = {nl}`complex number`
 
-{ph}`NP` [$x$]
+{ph}`opt_x` : [{cat}`Var`] = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$y$`
+
+element {ph}`opt_x` of $\{{ph}`y` \mid {ph}`y` \text{ is a {ph}`NP`}\}$
+
+{ph}`NP` {ph}`opt_x`
 ```
 
 

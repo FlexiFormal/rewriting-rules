@@ -3,9 +3,19 @@ Rule 5.9: "Choose"-VP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`choose` a $x \in \{y \mid \varphi[y]\}$ that {ph}`VP`
+{ph}`choose` : {cat}`choose` = {nl}`choose`
 
-{ph}`choose` a $x$ that {ph}`VP` with $\varphi[x]$
+{ph}`VP` : {cat}`VP` = {nl}`solve the equation $E$`
+
+{ph}`x` : {cat}`Var` = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$z$`
+
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+
+{ph}`choose` a ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ that {ph}`VP`
+
+{ph}`choose` a {ph}`x` that {ph}`VP` with ${ph}`P`[{ph}`x`]$
 ```
 
 

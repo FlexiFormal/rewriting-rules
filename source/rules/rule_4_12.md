@@ -3,9 +3,13 @@ Rule 4.12: "Neither"-VP Aggregation
 
 
 ```{rewrite-rule}
-$x$ does not {ph}`VP`$_1$ and ... and $x$ does not {ph}`VP`$_n$
+{ph}`VP_1`, $\ldots$, {ph}`VP_n` : {cat}`VP` = {nl}`contain $y$`, {nl}`include $z$`
 
-$x$ does neither {ph}`VP`$_1$ nor ... nor {ph}`VP`$_n$
+{ph}`t` : {cat}`Term` = {nl}`$x$`
+
+{ph}`t` does not {ph}`VP_1` and ... and {ph}`t` does not {ph}`VP_n`
+
+{ph}`t` does neither {ph}`VP_1` nor ... nor {ph}`VP_n`
 ```
 
 Examples

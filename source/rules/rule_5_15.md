@@ -3,9 +3,21 @@ Rule 5.15: Determiner-PP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`Det` [{ph}`NP` | {ph}`AP`] $x \in \{y \mid \varphi[y]\}$ with {ph}`PP`
+{ph}`Det` : {cat}`Det` = {nl}`all`
 
-{ph}`Det` [{ph}`NP` | {ph}`AP`] $x$ with $\varphi[x]$ and {ph}`PP`
+{ph}`opt_NP_or_AP` : [{cat}`NP` | {cat}`AP`] = {nl}``
+
+{ph}`Prop` : {cat}`Prop` = {nl}`$\Re(x) > 0$`
+
+{ph}`x` : {cat}`Var` = {nl}`$x$`
+
+{ph}`y` : {cat}`Var` = {nl}`$z$`
+
+{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+
+{ph}`Det` {ph}`opt_NP_or_AP` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ with {ph}`Prop`
+
+{ph}`Det` {ph}`opt_NP_or_AP` {ph}`x` with ${ph}`P`[{ph}`x`]$ and {ph}`Prop`
 ```
 
 

@@ -3,13 +3,23 @@ Rule 6.4: Parametrized $\iota$-Conversion
 
 
 ```{rewrite-rule}
-$f : A \to \mathcal{P}(B)$
+{ph}`f` : {cat}`Term` = {nl}`$\delta$`
 
-$\vdash \forall a \in A. |f(a)| = 1$
+{ph}`A` : {cat}`Term` = {nl}`$Q \times \Sigma$`
 
-$b \in f(a)$
+{ph}`B` : {cat}`Term` = {nl}`$Q$`
 
-$b = f(a)$
+{ph}`a` : {cat}`Term` = {nl}`$(q,c)$`
+
+{ph}`b` : {cat}`Term` = {nl}`$q'$`
+
+$\vdash {ph}`f` : {ph}`A` \to \mathcal{P}({ph}`B`)$
+
+$\vdash \forall {ph}`a` \in {ph}`A`. |{ph}`f`({ph}`a`)| = 1$
+
+${ph}`b` \in {ph}`f`({ph}`a`)$
+
+${ph}`b` = {ph}`f`({ph}`a`)$
 ```
 
 
@@ -26,7 +36,7 @@ $q' = \delta(q,c)$ which is captured by the following instance of
 the above rewrite rule:
 
 ```{rewrite-rule}
-$\delta : Q \times \Sigma \to \mathcal{P}(Q)$
+$\vdash \delta : Q \times \Sigma \to \mathcal{P}(Q)$
 
 $\vdash \forall (q,c) \in Q \times \Sigma. |\delta(q,c)| = 1$
 
