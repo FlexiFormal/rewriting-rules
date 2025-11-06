@@ -1,2 +1,3 @@
 sphinx
 myst-parser
+latex2mathml
