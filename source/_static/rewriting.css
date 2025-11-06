@@ -67,3 +67,7 @@
     width: 0;
     overflow: visible;
 }
+
+.divider-label > div {
+    padding-left: 0.3em;
+}

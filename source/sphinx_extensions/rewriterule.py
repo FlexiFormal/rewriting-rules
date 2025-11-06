@@ -105,7 +105,10 @@ class RewriteRenderer:
         w('<div class="divider-wrapper">')
         w('<div class="divider-line"></div>')
         w('<div class="divider-label">')
-        w(escape_html(delimiter.lstrip('-').strip()).replace(' ', '&nbsp;') or '&nbsp;')
+        w('<div style="width: 100em;">')
+        # w(escape_html(delimiter.lstrip('-').strip()).replace(' ', '&nbsp;') or '&nbsp;')
+        w(escape_html(delimiter.lstrip('-').strip()) or '&nbsp;')
+        w('</div>')
         w('</div>')
         w('</div>')
 
