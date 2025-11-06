@@ -47,3 +47,23 @@
     text-align: center;
 }
 
+.divider-wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: -0.35em;
+    margin-bottom: -0.5em;
+}
+
+.divider-line {
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    margin-top: 0.35em;
+}
+
+.divider-label {
+    display: inline-block;
+    margin: 0;
+    width: 0;
+    overflow: visible;
+}
