@@ -15,7 +15,7 @@ class NbnfLexer(RegexLexer):
     tokens = {
         'root': [
             (r'\s+', Whitespace),
-            (r'[{}[]()]', Punctuation),
+            (r'[{}[\]()]', Punctuation),
             (r'::=|:=|=|<-|->|\*|\+|\|', Operator),
             (r'''('[^']*')|("[^"]*")''', String),
             (r'''[a-zA-Z0-9_-][a-zA-Z0-9_\-\']*''', String),
@@ -27,3 +27,11 @@ class NbnfLexer(RegexLexer):
 
 def setup(app):
     """Sphinx likes having a setup function"""
+
+if __name__ == '__main__':
+    # Simple test code
+    from pygments import highlight
+    from pygments.formatters import TerminalFormatter
+
+    code = '[<Var>]'
+    print(highlight(code, NbnfLexer(), TerminalFormatter()))
