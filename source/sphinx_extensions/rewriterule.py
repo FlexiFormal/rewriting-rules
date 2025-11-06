@@ -176,7 +176,6 @@ class RewriteDirective(SphinxDirective):
     has_content = True
 
     def run(self):
-        print(self.content)
         return [rewriterule_node('\n'.join(self.content))]
 
 def visit_rewrite_node(self, node):
