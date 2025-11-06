@@ -3,17 +3,17 @@ Rule 11.2: "Has"-NP Double Negation Elimination
 
 
 ```{rewrite-rule}
-{ph}`NP` : {cat}`NP` = {nl}`element`
+NP : <NP> = "element"
 
-{ph}`P` : {cat}`Var` = {nl}`$P$`
+P : <Var> = "$P$"
 
-{ph}`x` : {cat}`Term` = {nl}`$x$`
+x : <Term> = "$x$"
 
-$\vdash \forall {ph}`P`.\, \neg \neg {ph}`P` = {ph}`P`$
+|- $\forall :P:.\, \neg \neg :P: = :P:$
 
-{ph}`x` does not have no {ph}`NP`
+":x: does not have no :NP:"
 
-{ph}`x` has a {ph}`NP`
+":x: has a :NP:"
 ```
 
 
@@ -21,9 +21,9 @@ Examples
 --------
 
 ```{rewrite-rule}
-$\vdash \forall P.\, \neg \neg P = P$
+|- $\forall P.\, \neg \neg P = P$
 
-$x$ does not have no element
+"$x$ does not have no element"
 
-$x$ has an element
+"$x$ has an element"
 ```

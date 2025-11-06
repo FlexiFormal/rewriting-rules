@@ -3,19 +3,19 @@ Rule 9.2: Sequence Structure Expansion
 
 
 ```{rewrite-rule}
-{ph}`noun` : {cat}`noun` = {nl}`transition`
+noun : <noun> = "transition"
 
-{ph}`t` : {cat}`symbolic term` = {nl}`$\langle q, c, q' \rangle$`
+t : <symbolic term> = "$\langle q, c, q' \rangle$"
 
-{ph}`x_1`, ..., {ph}`x_n` : {cat}`Var` = {nl}`$t_1$`, $\dots$, {nl}`$t_n$`
+x_1, ..., x_n : <Var> = "$t_1$", $\dots$, "$t_n$"
 
-{ph}`i` : {cat}`Var` = {nl}`$i$`
+i : <Var> = "$i$"
 
-{ph}`noun` := A {ph}`noun` is a (structure | pair | triple | ...) {ph}`t` (with ... | of ... | where ...)
+:noun: := "A :noun: is a @'structure' | 'pair' | 'triple' | ...@ :t: @'with' | 'of' | 'where'@ ..."
 
-sequence ${ph}`x_1`, \dots, {ph}`x_n`$ of {ph}`noun`
+"sequence $:x_1:, \dots, :x_n:$ of :noun:"
 
-sequence ${ph}`x_1`, \dots, {ph}`x_n`$ of {ph}`noun` ${ph}`x`_{{ph}`i`} :=$ ${ph}`t`_{{ph}`i`}$
+"sequence $:x_1:, \dots, :x_n:$ of :noun: $:x:_{:i:} := :t:_{:i:}$"
 ```
 
 
@@ -23,9 +23,9 @@ Examples
 --------
 
 ```{rewrite-rule}
-transition := A transition is a triple $\langle q, c, q' \rangle$ with $q' \in \delta(q,c)$
+"transition := "A transition is a triple $\langle q, c, q' \rangle$ with $q' \in \delta(q,c)$""
 
-sequence $t_1, \dots, t_n$ of transitions
+"sequence $t_1, \dots, t_n$ of transitions"
 
-sequence $t_1, \dots, t_n$ of transitions $t_i := \langle q_i, c_i, q'_i \rangle$
+"sequence $t_1, \dots, t_n$ of transitions $t_i := \langle q_i, c_i, q'_i \rangle$"
 ```

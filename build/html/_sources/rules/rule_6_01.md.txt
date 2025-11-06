@@ -3,13 +3,13 @@ Rule 6.1: $\iota_\in$-Reduction
 
 
 ```{rewrite-rule}
-{ph}`a` : {cat}`Term` = {nl}`$0$`
+a : <Term> = "$0$"
 
-{ph}`b` : {cat}`Term` = {nl}`$b$`
+b : <Term> = "$b$"
 
-${ph}`b` \in \{{ph}`a`\}$
+"$:b: \in \{:a:\}$"
 
-${ph}`b` = {ph}`a`$
+"$:b: = :a:$"
 ```
 
 
@@ -17,7 +17,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-$b \in \{0\}$
+"$b \in \{0\}$"
 
-$b = 0$
+"$b = 0$"
 ```

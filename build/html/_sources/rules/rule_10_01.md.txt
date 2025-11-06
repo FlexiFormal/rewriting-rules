@@ -3,15 +3,15 @@ Rule 10.1: Modal "True"-NP Reduction
 
 
 ```{rewrite-rule}
-{ph}`Det` : a | no = {nl}`a`
+Det : a | no = "a"
 
-{ph}`NP` : {cat}`NP` = {nl}`non-empty set`
+NP : <NP> = "non-empty set"
 
-{ph}`x` : {cat}`Term` = {nl}`$x$`
+x : <Term> = "$x$"
 
-it (is true | is the case | holds) that {ph}`x` is {ph}`Det` {ph}`NP`
+"it @is true | is the case | holds@ that :x: is :Det: :NP:"
 
-{ph}`x` is {ph}`Det` {ph}`NP`
+":x: is :Det: :NP:"
 ```
 
 
@@ -19,7 +19,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-it is the case that $x$ is a non-empy set
+"it is the case that $x$ is a non-empy set"
 
-$x$ is a non-empty set
+"$x$ is a non-empty set"
 ```

@@ -3,15 +3,15 @@ Rule 2.2: Verb Variable Reduction
 
 
 ```{rewrite-rule}
-{ph}`NP` : {cat}`NP` = {nl}`a prime number`
+NP : <NP> = "a prime number"
 
-{ph}`t` : {cat}`Term` = {nl}`$p$`
+t : <Term> = "$p$"
 
-{ph}`VP` : {cat}`VP` = {nl}`divides $n$`
+VP : <VP> = "divides $n$"
 
-{ph}`NP` {ph}`t` such that {ph}`t` {ph}`VP`
+":NP: :t: such that :t: :VP:"
 
-{ph}`NP` {ph}`t` that {ph}`VP`
+":NP: :t: that :VP:"
 ```
 
 
@@ -19,7 +19,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-a prime number $p$ such that $p$ divides $n$
+"a prime number $p$ such that $p$ divides $n$"
 
-a prime number $p$ that divides $n$
+"a prime number $p$ that divides $n$"
 ```

@@ -3,21 +3,21 @@ Rule 9.3: Family Structure Expansion
 
 
 ```{rewrite-rule}
-{ph}`noun` : {cat}`noun` = {nl}`edge`
+noun : <noun> = "edge"
 
-{ph}`t` : {cat}`Term` = {nl}`$\langle v, v' \rangle$`
+t : <Term> = "$\langle v, v' \rangle$"
 
-{ph}`x` : {cat}`Var` = {nl}`$e$`
+x : <Var> = "$e$"
 
-{ph}`i` : {cat}`Var` = {nl}`$i$`
+i : <Var> = "$i$"
 
-{ph}`I` : {cat}`Term` = {nl}`$I$`
+I : <Term> = "$I$"
 
-{ph}`noun` := A {ph}`noun` is a (structure | pair | triple | ...) {ph}`t` (with ... | of ... | where ...)
+:noun: := "A :noun: is a @'structure' | 'pair' | 'triple' | ...@ :t: @'with' | 'of' | 'where'@ ..."
 
-family $({ph}`x`_{{ph}`i`})_{{ph}`i` \in {ph}`I`}$ of {ph}`noun`
+"family $(:x:_{:i:})_{:i: \in :I:}$ of :noun:"
 
-family $({ph}`x`_{{ph}`i`})_{{ph}`i` \in {ph}`I`}$ of {ph}`noun` ${ph}`x`_{{ph}`i`} :=$ ${ph}`t`_{{ph}`i`}$
+"family $(:x:_{:i:})_{:i: \in :I:}$ of :noun: $:x:_{:i:} :=$ $:t:_{:i:}$"
 ```
 
 
@@ -25,9 +25,9 @@ Examples
 --------
 
 ```{rewrite-rule}
-edge := An edge is a pair $\langle v, v' \rangle$ of nodes $v, v'$.
+"edge := "An edge is a pair $\langle v, v' \rangle$ of nodes $v, v'$.""
 
-family $(e_i)_{i \in I}$ of edges
+"family $(e_i)_{i \in I}$ of edges"
 
-family $(e_i)_{i \in I}$ of edges $e_i := \langle v_i, v'_i \rangle$
+"family $(e_i)_{i \in I}$ of edges $e_i := \langle v_i, v'_i \rangle$"
 ```

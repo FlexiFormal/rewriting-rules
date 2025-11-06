@@ -3,17 +3,17 @@ Rule 11.4: AP Double Negation Elimination
 
 
 ```{rewrite-rule}
-{ph}`AP` : {cat}`AP` = {nl}`greater than $5$`
+AP : <AP> = "greater than $5$"
 
-{ph}`P` : {cat}`Var` = {nl}`$P$`
+P : <Var> = "$P$"
 
-{ph}`x` : {cat}`Term` = {nl}`$x$`
+x : <Term> = "$x$"
 
-$\vdash \forall {ph}`P`.\, \neg \neg {ph}`P` = {ph}`P`$
+|- $\forall :P:.\, \neg \neg :P: = :P:$
 
-{ph}`x` is not not {ph}`AP`
+":x: is not not :AP:"
 
-{ph}`x` is {ph}`AP`
+":x: is :AP:"
 ```
 
 
@@ -21,9 +21,9 @@ Examples
 --------
 
 ```{rewrite-rule}
-$\vdash \forall P.\, \neg \neg P = P$
+|- $\forall P.\, \neg \neg P = P$
 
-$x$ is not not greater than $5$
+"$x$ is not not greater than $5$"
 
-$x$ is greater than $5$
+"$x$ is greater than $5$"
 ```

@@ -3,19 +3,19 @@ Rule 5.10: "Choose"-PP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`choose` : {cat}`choose` = {nl}`choose`
+choose : <choose> = "choose"
 
-{ph}`Prop` : {cat}`Prop` = {nl}`$\Re(x) > 0$`
+Prop : <Prop> = "$\Re(x) > 0$"
 
-{ph}`x` : {cat}`Var` = {nl}`$x$`
+x : <Var> = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-{ph}`choose` a ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ with {ph}`Prop`
+":choose: a $:x: \in \{:y: \mid :P:[:y:]\}$ with :Prop:"
 
-{ph}`choose` a {ph}`x` with ${ph}`P`[{ph}`x`]$ and {ph}`Prop`
+":choose: a :x: with $:P:[:x:]$ and :Prop:"
 ```
 
 
@@ -23,7 +23,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ with $\Re(x) > 0$
+"choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ with $\Re(x) > 0$"
 
-choose an $x$ with $x^n = 1$ for some $n \in \mathbb{N}$ and $\Re(x) > 0$
+"choose an $x$ with $x^n = 1$ for some $n \in \mathbb{N}$ and $\Re(x) > 0$"
 ```

@@ -3,17 +3,17 @@ Rule 5.2: "Let" Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`let` : {cat}`let` = {nl}`let`
+let : <let> = "let"
 
-{ph}`x` : {cat}`Var` = {nl}`$x$`
+x : <Var> = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-{ph}`let` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$
+":let: $:x: \in \{:y: \mid :P:[:y:]\}$"
 
-{ph}`let` {ph}`x` be an element such that ${ph}`P`[{ph}`x`]$
+":let: :x: be an element such that $:P:[:x:]$"
 ```
 
 
@@ -21,7 +21,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-let $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$
+"let $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
-let $x$ be an element such that $x^n = 1$ for some $n \in \mathbb{N}$
+"let $x$ be an element such that $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

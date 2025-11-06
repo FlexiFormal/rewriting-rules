@@ -3,13 +3,13 @@ Rule 10.5: Modal "False"-VP Reduction
 
 
 ```{rewrite-rule}
-{ph}`VP` : {cat}`VP` = {nl}`intersect with $y$`
+VP : <VP> = "intersect with $y$"
 
-{ph}`x` : {cat}`Term` = {nl}`$x$`
+x : <Term> = "$x$"
 
-it (is wrong | is false | is not the case | does not hold) that {ph}`x` {ph}`VP`
+"it @is wrong | is false | is not the case | does not hold@ that :x: :VP:"
 
-{ph}`x` does not {ph}`VP`
+":x: does not :VP:"
 ```
 
 
@@ -17,7 +17,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-it does not hold that $x$ intersects with $y$
+"it does not hold that $x$ intersects with $y$"
 
-$x$ does not intersect with $y$
+"$x$ does not intersect with $y$"
 ```

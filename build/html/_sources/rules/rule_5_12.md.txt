@@ -3,21 +3,21 @@ Rule 5.12: Determiner-NP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`Det` : {cat}`Det` = {nl}`all`
+Det : <Det> = "all"
 
-{ph}`opt_AP` : [{cat}`AP`] = {nl}``
+opt_AP : [<AP>] = ""
 
-{ph}`NP` : {cat}`NP` = {nl}`real number`
+NP : <NP> = "real number"
 
-{ph}`x` : {cat}`Var` = {nl}`$x$`
+x : <Var> = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-{ph}`Det` {ph}`opt_AP` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ that is a {ph}`NP`
+":Det: :opt_AP: $:x: \in \{:y: \mid :P:[:y:]\}$ that is a :NP:"
 
-{ph}`Det` {ph}`opt_AP` {ph}`NP` {ph}`x` with ${ph}`P`[{ph}`x`]$
+":Det: :opt_AP: :NP: :x: with $:P:[:x:]$"
 ```
 
 
@@ -25,13 +25,13 @@ Examples
 --------
 
 ```{rewrite-rule}
-all $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ that are real numbers
+"all $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ that are real numbers"
 
-all real numbers $x$ with $x^n = 1$ for some $n \in \mathbb{N}$
+"all real numbers $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```
 
 ```{rewrite-rule}
-certain positive $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ that are real numbers
+"certain positive $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ that are real numbers"
 
-certain positive real numbers $x$ with $x^n = 1$ for some $n \in \mathbb{N}$
+"certain positive real numbers $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

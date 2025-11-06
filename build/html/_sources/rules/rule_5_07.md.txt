@@ -3,19 +3,19 @@ Rule 5.7: "Choose"-NP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`choose` : {cat}`choose` = {nl}`choose`
+choose : <choose> = "choose"
 
-{ph}`NP` : {cat}`NP` = {nl}`real number`
+NP : <NP> = "real number"
 
-{ph}`x` : {cat}`Var` = {nl}`$x$`
+x : <Var> = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-{ph}`choose` a ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ that is a {ph}`NP`
+":choose: a $:x: \in \{:y: \mid :P:[:y:]\}$ that is a :NP:"
 
-{ph}`choose` a {ph}`NP` {ph}`x` with ${ph}`P`[{ph}`x`]$
+":choose: a :NP: :x: with $:P:[:x:]$"
 ```
 
 
@@ -23,7 +23,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ that is a real number
+"choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ that is a real number"
 
-choose a real number $x$ with $x^n = 1$ for some $n \in \mathbb{N}$
+"choose a real number $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

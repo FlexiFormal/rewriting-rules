@@ -3,13 +3,13 @@ Rule 10.8: Modal "False"-AP Reduction
 
 
 ```{rewrite-rule}
-{ph}`AP` : {cat}`AP` = {nl}`prime`
+AP : <AP> = "prime"
 
-{ph}`x` : {cat}`Term` = {nl}`$x$`
+x : <Term> = "$x$"
 
-it (is wrong | is false | is not the case | does not hold) that {ph}`x` is {ph}`AP`
+"it @is wrong | is false | is not the case | does not hold@ that :x: is :AP:"
 
-{ph}`x` is not {ph}`AP`
+":x: is not :AP:"
 ```
 
 
@@ -17,7 +17,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-it does not hold that $n$ is prime
+"it does not hold that $n$ is prime"
 
-$n$ is not prime
+"$n$ is not prime"
 ```

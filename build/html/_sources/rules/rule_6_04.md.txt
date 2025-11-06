@@ -3,23 +3,23 @@ Rule 6.4: Parametrized $\iota$-Conversion
 
 
 ```{rewrite-rule}
-{ph}`f` : {cat}`Term` = {nl}`$\delta$`
+f : <Term> = "$\delta$"
 
-{ph}`A` : {cat}`Term` = {nl}`$Q \times \Sigma$`
+A : <Term> = "$Q \times \Sigma$"
 
-{ph}`B` : {cat}`Term` = {nl}`$Q$`
+B : <Term> = "$Q$"
 
-{ph}`a` : {cat}`Term` = {nl}`$(q,c)$`
+a : <Term> = "$(q,c)$"
 
-{ph}`b` : {cat}`Term` = {nl}`$q'$`
+b : <Term> = "$q'$"
 
-$\vdash {ph}`f` : {ph}`A` \to \mathcal{P}({ph}`B`)$
+|- $:f: : :A: \to \mathcal{P}(:B:)$
 
-$\vdash \forall {ph}`a` \in {ph}`A`. |{ph}`f`({ph}`a`)| = 1$
+|- $\forall :a: \in :A:. |:f:(:a:)| = 1$
 
-${ph}`b` \in {ph}`f`({ph}`a`)$
+"$:b: \in :f:(:a:)$"
 
-${ph}`b` = {ph}`f`({ph}`a`)$
+"$:b: = :f:(:a:)$"
 ```
 
 
@@ -36,11 +36,11 @@ $q' = \delta(q,c)$ which is captured by the following instance of
 the above rewrite rule:
 
 ```{rewrite-rule}
-$\vdash \delta : Q \times \Sigma \to \mathcal{P}(Q)$
+|- $\delta : Q \times \Sigma \to \mathcal{P}(Q)$
 
-$\vdash \forall (q,c) \in Q \times \Sigma. |\delta(q,c)| = 1$
+|- $\forall (q,c) \in Q \times \Sigma. |\delta(q,c)| = 1$
 
-$q' \in \delta(q,c)$
+"$q' \in \delta(q,c)$"
 
-$q' = \delta(q,c)$
+"$q' = \delta(q,c)$"
 ```

@@ -3,17 +3,17 @@ Rule 11.1: "Is"-NP Double Negation Elimination
 
 
 ```{rewrite-rule}
-{ph}`NP` : {cat}`NP` = {nl}`prime number`
+NP : <NP> = "prime number"
 
-{ph}`P` : {cat}`Var` = {nl}`$P$`
+P : <Var> = "$P$"
 
-{ph}`x` : {cat}`Term` = {nl}`$x$`
+x : <Term> = "$x$"
 
-$\vdash \forall {ph}`P`.\, \neg \neg {ph}`P` = {ph}`P`$
+|- $\forall :P:.\, \neg \neg :P: = :P:$
 
-{ph}`x` is not no {ph}`NP`
+":x: is not no :NP:"
 
-{ph}`x` is a {ph}`NP`
+":x: is a :NP:"
 ```
 
 
@@ -21,9 +21,9 @@ Examples
 --------
 
 ```{rewrite-rule}
-$\vdash \forall P.\, \neg \neg P = P$
+|- $\forall P.\, \neg \neg P = P$
 
-$x$ is not no prime number
+"$x$ is not no prime number"
 
-$x$ is a prime number
+"$x$ is a prime number"
 ```

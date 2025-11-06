@@ -3,15 +3,15 @@ Rule 10.2: Modal "False"-NP Reduction
 
 
 ```{rewrite-rule}
-{ph}`Det` : a | no = {nl}`a`
+Det : a | no = "a"
 
-{ph}`NP` : {cat}`NP` = {nl}`prime number`
+NP : <NP> = "prime number"
 
-{ph}`x` : {cat}`Term` = {nl}`$x$`
+x : <Term> = "$x$"
 
-it (is wrong | is false | is not the case | does not hold) that {ph}`x` is {ph}`Det` {ph}`NP`
+"it @is wrong | is false | is not the case | does not hold@ that :x: is :Det: :NP:"
 
-{ph}`x` is not {ph}`Det` {ph}`NP`
+":x: is not :Det: :NP:"
 ```
 
 
@@ -19,7 +19,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-it does not hold that $n$ is a prime number
+"it does not hold that $n$ is a prime number"
 
-$n$ is not a prime number
+"$n$ is not a prime number"
 ```

@@ -3,24 +3,24 @@ Rule 4.14: "Neither"-NP Aggregation
 
 
 ```{rewrite-rule}
-{ph}`Det_1`, $\ldots$, {ph}`Det_n` : a | no = {nl}`a`, {nl}`no`
+Det_1, ..., Det_n : a | no = "a", "no"
 
-{ph}`NP_1`, $\ldots$, {ph}`NP_n` : {cat}`NP` = {nl}`prime`, {nl}`even number`
+NP_1, ..., NP_n : <NP> = "prime", "even number"
 
-{ph}`t` : {cat}`Term` = {nl}`$x$`
+t : <Term> = "$x$"
 
-{ph}`t` is not {ph}`Det_1` {ph}`NP_1` and ... and {ph}`t` is not {ph}`Det_n` {ph}`NP_n`
+":t: is not :Det_1: :NP_1: and ... and :t: is not :Det_n: :NP_n:"
 
-{ph}`t` is neither {ph}`Det_1` {ph}`NP_1` nor ... nor {ph}`Det_n` {ph}`NP_n`
+":t: is neither :Det_1: :NP_1: nor ... nor :Det_n: :NP_n:"
 ```
 
 Examples
 --------
 
 ```{rewrite-rule}
-$x$ is not a prime and $x$ is no even number
+"$x$ is not a prime and $x$ is no even number"
 
-$x$ is neither a prime nor no even number
+"$x$ is neither a prime nor no even number"
 ```
 
 

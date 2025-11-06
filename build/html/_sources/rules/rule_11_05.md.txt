@@ -3,17 +3,17 @@ Rule 11.5: VP Double Negation Elimination
 
 
 ```{rewrite-rule}
-{ph}`VP` : {cat}`VP` = {nl}`intersect with $y$`
+VP : <VP> = "intersect with $y$"
 
-{ph}`P` : {cat}`Var` = {nl}`$P$`
+P : <Var> = "$P$"
 
-{ph}`x` : {cat}`Term` = {nl}`$x$`
+x : <Term> = "$x$"
 
-$\vdash \forall {ph}`P`.\, \neg \neg {ph}`P` = {ph}`P`$
+|- $\forall :P:.\, \neg \neg :P: = :P:$
 
-{ph}`x` does not not {ph}`VP`
+":x: does not not :VP:"
 
-{ph}`x` {ph}`VP`
+":x: :VP:"
 ```
 
 
@@ -21,9 +21,9 @@ Examples
 --------
 
 ```{rewrite-rule}
-$\vdash \forall P.\, \neg \neg P = P$
+|- $\forall P.\, \neg \neg P = P$
 
-$x$ does not not intersect with $y$
+"$x$ does not not intersect with $y$"
 
-$x$ intersects with $y$
+"$x$ intersects with $y$"
 ```

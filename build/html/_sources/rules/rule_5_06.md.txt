@@ -3,17 +3,17 @@ Rule 5.6: "Choose" Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`choose` : {cat}`choose` = {nl}`choose`
+choose : <choose> = "choose"
 
-{ph}`x` : {cat}`Var` = {nl}`$x$`
+x : <Var> = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-{ph}`choose` a ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$
+":choose: a $:x: \in \{:y: \mid :P:[:y:]\}$"
 
-{ph}`choose` a {ph}`x` with ${ph}`P`[{ph}`x`]$
+":choose: a :x: with $:P:[:x:]$"
 ```
 
 
@@ -21,7 +21,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$
+"choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
-choose an $x$ with $x^n = 1$ for some $n \in \mathbb{N}$
+"choose an $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

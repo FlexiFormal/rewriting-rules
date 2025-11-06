@@ -3,15 +3,15 @@ Rule 5.18: Relation Guard Reduction
 
 
 ```{rewrite-rule}
-{ph}`R`[{ph}`a`] : {cat}`Guarded Identifier` = {nl}`$1 \leq {ph}`a` \leq n$`
+R[a] : <Guarded Identifier> = "$1 \leq :a: \leq n$"
 
-{ph}`y` : {cat}`Var` = {nl}`$y$`
+y : <Var> = "$y$"
 
-{ph}`P`[{ph}`b`] : {cat}`Pred` = {nl}`$1/{ph}`b` < \varepsilon$`
+P[b] : <Pred> = "$1/:b: < \varepsilon$"
 
-$\{{ph}`R`[{ph}`y`] \mid {ph}`P`[{ph}`y`]\}$
+"$\{:R:[:y:] \mid :P:[:y:]\}$"
 
-$\{{ph}`y` \mid {ph}`R`[{ph}`y`] \text{ and } {ph}`P`[{ph}`y`]\}$
+"$\{:y: \mid :R:[:y:] \text{ and } :P:[:y:]\}$"
 ```
 
 
@@ -19,7 +19,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-$\{1 \leq i \leq n \mid 1/i < \varepsilon\}$
+"$\{1 \leq i \leq n \mid 1/i < \varepsilon\}$"
 
-$\{i \mid 1 \leq i \leq n \text{ and } 1/i < \varepsilon\}$
+"$\{i \mid 1 \leq i \leq n \text{ and } 1/i < \varepsilon\}$"
 ```

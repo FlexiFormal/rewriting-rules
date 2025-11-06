@@ -3,13 +3,13 @@ Rule 10.4: Modal "True"-VP Reduction
 
 
 ```{rewrite-rule}
-{ph}`VP` : {cat}`VP` = {nl}`divide $5$`
+VP : <VP> = "divide $5$"
 
-{ph}`x` : {cat}`Term` = {nl}`$x$`
+x : <Term> = "$x$"
 
-it (is true | is the case | holds) that {ph}`x` {ph}`VP`
+"it @is true | is the case | holds@ that :x: :VP:"
 
-{ph}`x` {ph}`VP`
+":x: :VP:"
 ```
 
 
@@ -17,7 +17,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-it is the case that $x$ divides $5$
+"it is the case that $x$ divides $5$"
 
-$x$ divides $5$
+"$x$ divides $5$"
 ```

@@ -3,17 +3,17 @@ Rule 5.16: Subset Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`then` : {cat}`then` = {nl}`assume`
+then : <then> = "assume"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`X` : {cat}`Var` = {nl}`$X$`
+X : <Var> = "$X$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-{ph}`then` $\{{ph}`y` \mid {ph}`P`[{ph}`y`]\} \subseteq {ph}`X`$
+":then: $\{:y: \mid :P:[:y:]\} \subseteq :X:$"
 
-{ph}`then` ${ph}`y` \in {ph}`X`$ for all {ph}`y` with ${ph}`P`[{ph}`y`]$
+":then: $:y: \in :X:$ for all :y: with $:P:[:y:]$"
 ```
 
 
@@ -21,7 +21,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-assume $\{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\} \subseteq X$
+"assume $\{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\} \subseteq X$"
 
-assume $z \in X$ for all $z$ with $z^n = 1$ for some $n \in \mathbb{N}$
+"assume $z \in X$ for all $z$ with $z^n = 1$ for some $n \in \mathbb{N}$"
 ```
