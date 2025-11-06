@@ -58,7 +58,9 @@
     height: 2px;
     background-color: black;
     width: 100%;
-    margin-top: 0.35em;
+    /*margin-top: 0.35em;*/
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .divider-label {
