@@ -13,6 +13,8 @@ A : <Term> = "$\{p \mid p \text{ is an even prime}\}$"
 
 ":A:"
 
+--- Singleton Conversion
+
 "$\{:a:\}$"
 ```
 

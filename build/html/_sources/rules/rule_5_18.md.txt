@@ -11,6 +11,8 @@ P[b] : <Pred> = "$1/:b: < \varepsilon$"
 
 "$\{:R:[:y:] \mid :P:[:y:]\}$"
 
+--- Relation Guard Reduction
+
 "$\{:y: \mid :R:[:y:] \text{ and } :P:[:y:]\}$"
 ```
 

@@ -9,6 +9,8 @@ x : <Term> = "$x$"
 
 "it @is true | is the case | holds@ that :x: is :AP:"
 
+--- Modal "True"-AP Reduction
+
 ":x: is :AP:"
 ```
 

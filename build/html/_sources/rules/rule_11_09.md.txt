@@ -11,6 +11,8 @@ P : <Var> = "$P$"
 
 ":Prop: and :Prop:"
 
+--- "And"-Idempotence Reduction
+
 ":Prop:"
 ```
 

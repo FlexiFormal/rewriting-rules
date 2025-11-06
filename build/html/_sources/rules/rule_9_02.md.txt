@@ -15,6 +15,8 @@ i : <Var> = "$i$"
 
 "sequence $:x_1:, \dots, :x_n:$ of :noun:"
 
+--- Sequence Structure Expansion
+
 "sequence $:x_1:, \dots, :x_n:$ of :noun: $:x:_{:i:} := :t:_{:i:}$"
 ```
 

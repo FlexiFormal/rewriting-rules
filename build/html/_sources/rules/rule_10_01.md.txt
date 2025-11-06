@@ -11,6 +11,8 @@ x : <Term> = "$x$"
 
 "it @is true | is the case | holds@ that :x: is :Det: :NP:"
 
+--- Modal "True"-NP Reduction
+
 ":x: is :Det: :NP:"
 ```
 

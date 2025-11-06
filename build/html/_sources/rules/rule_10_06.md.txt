@@ -11,6 +11,8 @@ x : <Term> = "$x$"
 
 "it is :Mod: that :x: :VP:"
 
+--- Generic Modal VP Reduction
+
 ":x: :Mod: :VP:"
 ```
 

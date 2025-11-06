@@ -9,6 +9,8 @@ t : <Term> = "$x$"
 
 ":t: does not :VP_1: and ... and :t: does not :VP_n:"
 
+--- "Neither"-VP Aggregation
+
 ":t: does neither :VP_1: nor ... nor :VP_n:"
 ```
 

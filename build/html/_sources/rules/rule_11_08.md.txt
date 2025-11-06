@@ -11,6 +11,8 @@ P : <Var> = "$P$"
 
 ":Prop: and it is wrong that :Prop:"
 
+--- Contradiction Introduction
+
 "we have a contradiction"
 ```
 

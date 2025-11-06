@@ -9,6 +9,8 @@ A : <Term> = "$\mathbb{Z}$"
 
 "$\{:a:\} \subseteq :A:$"
 
+--- Iota-Subset Reduction
+
 "$:a: \in :A:$"
 ```
 

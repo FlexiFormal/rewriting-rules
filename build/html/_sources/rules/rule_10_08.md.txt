@@ -9,6 +9,8 @@ x : <Term> = "$x$"
 
 "it @is wrong | is false | is not the case | does not hold@ that :x: is :AP:"
 
+--- Modal "False"-AP Reduction
+
 ":x: is not :AP:"
 ```
 

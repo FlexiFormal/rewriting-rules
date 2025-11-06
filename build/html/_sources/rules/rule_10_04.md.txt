@@ -9,6 +9,8 @@ x : <Term> = "$x$"
 
 "it @is true | is the case | holds@ that :x: :VP:"
 
+--- Modal "True"-VP Reduction
+
 ":x: :VP:"
 ```
 

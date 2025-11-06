@@ -13,6 +13,8 @@ Q : <Var> = "$Q$"
 
 ":Prop_1: and :Prop_2:"
 
+--- "And"-Commutativity Conversion
+
 ":Prop_2: and :Prop_1:"
 ```
 

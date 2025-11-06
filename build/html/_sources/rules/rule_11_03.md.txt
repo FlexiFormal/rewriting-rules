@@ -13,6 +13,8 @@ x : <Term> = "$x$"
 
 ":x: is not non-:adjective:"
 
+--- Adjective Double Negation Elimination
+
 ":x: is :adjective:"
 ```
 

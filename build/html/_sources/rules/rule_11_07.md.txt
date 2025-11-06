@@ -13,6 +13,8 @@ Q : <Var> = "$Q$"
 
 ":Prop_1: or it is wrong that :Prop_2:"
 
+--- Implication Introduction
+
 "@if :Prop_2: then | :Prop_2: implies | :Prop_2: entails@ :Prop_1:"
 ```
 

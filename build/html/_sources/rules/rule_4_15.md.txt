@@ -11,6 +11,8 @@ t : <Term> = "$x$"
 
 ":t: is :Det_1: :NP_1: or ... or :t: is :Det_n: :NP_n: @and | but@ :t: is not both :Det_1: :NP_1: and ... and :Det_n: :NP_n:"
 
+--- "Either"-NP Aggregation
+
 ":t: is either :Det_1: :NP_1: or ... or :Det_n: :NP_n:"
 ```
 

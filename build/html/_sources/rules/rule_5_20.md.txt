@@ -11,6 +11,8 @@ y : <Var> = "$y$"
 
 "element :opt_x: of $\{:y: \mid :y: \text{ is a } :NP:\}$"
 
+--- Element-NP Guard Reduction
+
 ":NP: :opt_x:"
 ```
 

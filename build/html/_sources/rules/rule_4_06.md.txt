@@ -9,6 +9,8 @@ T_1, ..., T_n : <Term> = "$\mathbb{Z}$", "$\{ x \in \mathbb{R} \mid x^3 \geq x^2
 
 "$:t: \in :T_1:$ and ... and $:t: \in :T_n:$"
 
+--- "And"-Element Aggregation
+
 "$:t: \in :T_1: \cap \dots \cap :T_n:$"
 ```
 

@@ -9,6 +9,8 @@ t : <Term> = "$x$"
 
 ":t: is :AP_1: or ... or :t: is :AP_n: @and | but@ :t: is not both :AP_1: and ... and :AP_n:"
 
+--- "Either"-AP Aggregation
+
 ":t: is either :AP_1: or ... or :AP_n:"
 ```
 

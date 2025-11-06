@@ -17,6 +17,8 @@ I : <Term> = "$I$"
 
 "family $(:x:_{:i:})_{:i: \in :I:}$ of :noun:"
 
+--- Family Structure Expansion
+
 "family $(:x:_{:i:})_{:i: \in :I:}$ of :noun: $:x:_{:i:} :=$ $:t:_{:i:}$"
 ```
 

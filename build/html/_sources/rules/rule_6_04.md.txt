@@ -19,6 +19,8 @@ b : <Term> = "$q'$"
 
 "$:b: \in :f:(:a:)$"
 
+--- Parametrized Iota-Conversion
+
 "$:b: = :f:(:a:)$"
 ```
 

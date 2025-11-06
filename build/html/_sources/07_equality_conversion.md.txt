@@ -12,6 +12,8 @@ B : <Term> = "$R^+$"
 
 ":A:"
 
+--- Equality Conversion
+
 ":B:"
 ```
 

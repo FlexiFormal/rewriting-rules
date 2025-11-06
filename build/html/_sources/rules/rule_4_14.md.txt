@@ -11,6 +11,8 @@ t : <Term> = "$x$"
 
 ":t: is not :Det_1: :NP_1: and ... and :t: is not :Det_n: :NP_n:"
 
+--- "Neither"-NP Aggregation
+
 ":t: is neither :Det_1: :NP_1: nor ... nor :Det_n: :NP_n:"
 ```
 

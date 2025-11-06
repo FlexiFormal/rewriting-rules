@@ -12,6 +12,8 @@ R`[x] : <guarded identifier> = "$:x: \in Q \setminus F$"
 
 ":Det: :opt_NP: :t: with :R:[:t:]"
 
+--- Atom Determiner Reduction
+
 ":Det: :opt_NP: :R:[:t:]"
 ```
 

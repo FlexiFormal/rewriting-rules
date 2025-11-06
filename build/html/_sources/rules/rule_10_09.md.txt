@@ -11,6 +11,8 @@ x : <Term> = "$x$"
 
 "it is :Mod: that :x: is :AP:"
 
+--- Generic Modal AP Reduction
+
 ":x: is :Mod: :AP:"
 ```
 

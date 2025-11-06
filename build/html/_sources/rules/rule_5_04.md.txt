@@ -15,6 +15,8 @@ P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
 ":let: $:x: \in \{:y: \mid :P:[:y:]\}$ be :AP:"
 
+--- "Let"-AP Comprehension Term Reduction
+
 ":let: :x: be :AP: such that $:P:[:x:]$"
 ```
 
