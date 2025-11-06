@@ -3,17 +3,17 @@ Rule 5.17: Term Guard Reduction
 
 
 ```{rewrite-rule}
-{ph}`t`[{ph}`a_1`, ..., {ph}`a_n`] : {cat}`Term` = {nl}`${ph}`a`^2$`
+t[a_1, ..., a_n] : <Term> = "${ph}"a`^2$`
 
-{ph}`y_1`, ..., {ph}`y_n` : {cat}`Var` = {nl}`$y$`
+y_1, ..., y_n : <Var> = "$y$"
 
-{ph}`P`[{ph}`b_1`, ..., {ph}`b_n`] : {cat}`Pred` = {nl}`${ph}`b` \in \mathbb{N}$`
+P[b_1, ..., b_n] : <Pred> = "$:b: \in \mathbb{N}$"
 
-{ph}`z` : {cat}`Var` = {nl}`$z$`
+z : <Var> = "$z$"
 
-$\{{ph}`t`[{ph}`y_1`, \dots, {ph}`y_n`] \mid {ph}`P`[{ph}`y_1`, \dots, {ph}`y_n`]\}$
+"$\{:t:[:y_1:, \dots, :y_n:] \mid :P:[:y_1:, \dots, :y_n:]\}$"
 
-$\{{ph}`z` \mid \text{there exist } {ph}`y_1`, \dots, {ph}`y_n` \text{ such that } {ph}`z` = {ph}`t`[{ph}`y_1`, \dots, {ph}`y_n`] \text{ and } {ph}`P`[{ph}`y_1`, \dots, {ph}`y_n`]\}$
+"$\{:z: \mid \text{there exist } :y_1:, \dots, :y_n: \text{ such that } :z: = :t:[:y_1:, \dots, :y_n:] \text{ and } :P:[:y_1:, \dots, :y_n:]\}$"
 ```
 
 
@@ -21,7 +21,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-$\{n^2 \mid n \in \mathbb{N}\}$
+"$\{n^2 \mid n \in \mathbb{N}\}$"
 
-$\{z \mid \text{there exist an } n \text{ such that } z = n^2 \text{ and } n \in \mathbb{N}\}$
+"$\{z \mid \text{there exist an } n \text{ such that } z = n^2 \text{ and } n \in \mathbb{N}\}$"
 ```

@@ -3,19 +3,19 @@ Rule 5.11: Determiner Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`Det` : {cat}`Det` = {nl}`all`
+Det : <Det> = "all"
 
-{ph}`opt_NP_or_AP` : [{cat}`NP` | {cat}`AP`] = {nl}``
+opt_NP_or_AP : [<NP> | <AP>] = ""
 
-{ph}`x` : {cat}`Var` = {nl}`$x$`
+x : <Var> = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-{ph}`Det` {ph}`opt_NP_or_AP` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$
+":Det: :opt_NP_or_AP: $:x: \in \{:y: \mid :P:[:y:]\}$"
 
-{ph}`Det` {ph}`opt_NP_or_AP` {ph}`x` with ${ph}`P`[{ph}`x`]$
+":Det: :opt_NP_or_AP: :x: with $:P:[:x:]$"
 ```
 
 
@@ -23,19 +23,19 @@ Examples
 --------
 
 ```{rewrite-rule}
-all $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$
+"all $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
-all $x$ with $x^n = 1$ for some $n \in \mathbb{N}$
+"all $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```
 
 ```{rewrite-rule}
-those complex numbers $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$
+"those complex numbers $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
-those complex numbers $x$ with $x^n = 1$ for some $n \in \mathbb{N}$
+"those complex numbers $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```
 
 ```{rewrite-rule}
-certain imaginary $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$
+"certain imaginary $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
-certain imaginary $x$ with $x^n = 1$ for some $n \in \mathbb{N}$
+"certain imaginary $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

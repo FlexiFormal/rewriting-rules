@@ -3,19 +3,19 @@ Rule 5.4: "Let"-AP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`let` : {cat}`let` = {nl}`let`
+let : <let> = "let"
 
-{ph}`AP` : {cat}`AP` = {nl}`imaginary`
+AP : <AP> = "imaginary"
 
-{ph}`x` : {cat}`Var` = {nl}`$x$`
+x : <Var> = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-{ph}`let` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ be {ph}`AP`
+":let: $:x: \in \{:y: \mid :P:[:y:]\}$ be :AP:"
 
-{ph}`let` {ph}`x` be {ph}`AP` such that ${ph}`P`[{ph}`x`]$
+":let: :x: be :AP: such that $:P:[:x:]$"
 ```
 
 
@@ -23,7 +23,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-let $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ be imaginary
+"let $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ be imaginary"
 
-let $x$ be imaginary such that $x^n = 1$ for some $n \in \mathbb{N}$
+"let $x$ be imaginary such that $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

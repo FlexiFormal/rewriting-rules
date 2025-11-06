@@ -3,19 +3,19 @@ Rule 5.5: "Let"-PP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`let` : {cat}`let` = {nl}`let`
+let : <let> = "let"
 
-{ph}`Prop` : {cat}`Prop` = {nl}`$\Im(x) > 0$`
+Prop : <Prop> = "$\Im(x) > 0$"
 
-{ph}`x` : {cat}`Var` = {nl}`$x$`
+x : <Var> = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-{ph}`let` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ with {ph}`Prop`
+":let: $:x: \in \{:y: \mid :P:[:y:]\}$ with :Prop:"
 
-{ph}`let` {ph}`x` be an element such that ${ph}`P`[{ph}`x`]$ and {ph}`Prop`
+":let: :x: be an element such that $:P:[:x:]$ and :Prop:"
 ```
 
 
@@ -23,7 +23,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-let $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ with $\Im(x) > 0$
+"let $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ with $\Im(x) > 0$"
 
-let $x$ be an element such that $x^n = 1$ for some $n \in \mathbb{N}$ and $\Im(x) > 0$
+"let $x$ be an element such that $x^n = 1$ for some $n \in \mathbb{N}$ and $\Im(x) > 0$"
 ```

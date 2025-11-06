@@ -21,9 +21,9 @@ Examples
 
 
 ```{rewrite-rule}
-an input symbol $a$ with $\delta(a,q)\ne\emptyset$ for all final states $q$
+"applicable := "$a$ is applicable to $q$ iff $\delta(a,q)\ne\emptyset$""
 
-$a$ is applicable to $q$ iff $\delta(a,q)\ne\emptyset$
+"an input symbol $a$ with $\delta(a,q)\ne\emptyset$ for all final states $q$"
 
-an input symbol $a$ such that $a$ is applicable in $q$ for all final states $q$
+"an input symbol $a$ such that $a$ is applicable in $q$ for all final states $q$"
 ```

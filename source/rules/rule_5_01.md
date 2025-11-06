@@ -3,17 +3,17 @@ Rule 5.1: "Then" Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`then` : {cat}`then` = {nl}`assume`
+then : <then> = "assume"
 
-{ph}`x` : {cat}`Var` = {nl}`$x$`
+x : <Var> = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}``{ph}`a`$^n = 1$ for some $n \in \mathbb{N}$``
+P[a] : <Pred> = "$:a:^n = 1$ for some $n \in \mathbb{N}$"
 
-{ph}`then` {ph}`x` $\in \{${ph}`y` $\mid$ {ph}`P`$[${ph}`y`$]\}$
+":then: $:x: \in \{:y: \mid :P:[:y:]\}$"
 
-{ph}`then` {ph}`P`$[${ph}`x`$]$
+":then: :P:[:x:]"
 ```
 
 
@@ -21,7 +21,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-assume $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$
+"assume $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
-assume $x^n = 1$ for some $n \in \mathbb{N}$
+"assume $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

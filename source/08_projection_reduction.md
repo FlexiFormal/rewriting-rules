@@ -8,15 +8,15 @@ element of $A_i \times \dots \times A_n$ yields the following
 rewrite rule:
 
 ```{rewrite-rule}
-{ph}`a_1`, ..., {ph}`a_n` : {cat}`Term` = {nl}`$\sin(x)$`, {nl}`$\cos(x + 1)$`
+a_1, ..., a_n : <Term> = "$\sin(x)$", "$\cos(x + 1)$"
 
-{ph}`i` : {cat}`Term` = {nl}`$1 + 1$`
+i : <Term> = "$1 + 1$"
 
-$\vdash {ph}`i` = j$
+|- $:i: = j$
 
-$\pi_{{ph}`i`}(\langle {ph}`a_1`, \dots, {ph}`a_n` \rangle)$
+"$\pi_{:i:}(\langle :a_1:, \dots, :a_n: \rangle)$"
 
-{ph}`a_j`
+":a_j:"
 ```
 
 
@@ -24,9 +24,9 @@ Examples
 --------
 
 ```{rewrite-rule}
-$\vdash 1 + 1 = 2$
+|- $1 + 1 = 2$
 
-$\pi_{1 + 1}(\langle \sin(x), \cos(x + 1) \rangle)$
+"$\pi_{1 + 1}(\langle \sin(x), \cos(x + 1) \rangle)$"
 
-$\cos(x + 1)$
+"$\cos(x + 1)$"
 ```

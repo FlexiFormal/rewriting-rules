@@ -3,15 +3,15 @@ Rule 5.21: Subset-NP Guard Reduction
 
 
 ```{rewrite-rule}
-{ph}`NP` : {cat}`NP` = {nl}`complex number`
+NP : <NP> = "complex number"
 
-{ph}`opt_x` : [{cat}`Var`] = {nl}`$x$`
+opt_x : [<Var>] = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$y$`
+y : <Var> = "$y$"
 
-subset {ph}`opt_x` of $\{{ph}`y` \mid {ph}`y` \text{ is a }{ph}`NP`\}$
+"subset :opt_x: of $\{:y: \mid :y: \text{ is a } :NP:\}$"
 
-set {ph}`opt_x` of {ph}`NP`
+"set :opt_x: of :NP:"
 ```
 
 
@@ -19,7 +19,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-subsets of $\{z \mid z \text{ is a complex number}\}$
+"subsets of $\{z \mid z \text{ is a complex number}\}$"
 
-sets of complex numbers
+"sets of complex numbers"
 ```

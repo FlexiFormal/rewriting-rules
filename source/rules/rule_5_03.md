@@ -3,19 +3,19 @@ Rule 5.3: "Let"-NP Comprehension Term Reduction
 
 
 ```{rewrite-rule}
-{ph}`let` : {cat}`let` = {nl}`let`
+let : <let> = "let"
 
-{ph}`NP` : {cat}`NP` = {nl}`complex number`
+NP : <NP> = "complex number"
 
-{ph}`x` : {cat}`Var` = {nl}`$x$`
+x : <Var> = "$x$"
 
-{ph}`y` : {cat}`Var` = {nl}`$z$`
+y : <Var> = "$z$"
 
-{ph}`P`[{ph}`a`] : {cat}`Pred` = {nl}`${ph}`a`^n = 1 \text{ for some } n \in \mathbb{N}$`
+P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-{ph}`let` ${ph}`x` \in \{{ph}`y` \mid {ph}`P`[{ph}`y`]\}$ be a {ph}`NP`
+":let: $:x: \in \{:y: \mid :P:[:y:]\}$ be a :NP:"
 
-{ph}`let` {ph}`x` be a {ph}`NP` such that ${ph}`P`[{ph}`x`]$
+":let: :x: be a :NP: such that $:P:[:x:]$"
 ```
 
 
@@ -23,7 +23,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-let $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ be a complex number
+"let $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ be a complex number"
 
-let $x$ be a complex number such that $x^n = 1$ for some $n \in \mathbb{N}$
+"let $x$ be a complex number such that $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

@@ -24,9 +24,9 @@ Moreover, for each case we have to take the
 structure of the sentence that contains the expression "$x \in C$" into account,
 where we distinguish between
 
-  - **assertion expressions**, i.e. expressions starting with an (optional) {ph}`then` (see below),
-  - **declaration expressions**, i.e. sentences starting with {ph}`let` (see below),
-  - **choice expressions**, i.e. sentences starting with {ph}`choose` (see below) or
+  - **assertion expressions**, i.e. expressions starting with an (optional) `then` (see below),
+  - **declaration expressions**, i.e. sentences starting with `let` (see below),
+  - **choice expressions**, i.e. sentences starting with `choose` (see below) or
   - **determiner expressions**, i.e. expressions starting with a determiner.
 
 Moreover, in the case of declaration, choice and determiner expressions we
