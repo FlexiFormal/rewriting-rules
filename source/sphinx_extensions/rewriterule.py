@@ -42,7 +42,10 @@ class RewriteRenderer:
                 self.render_precondition(line)
             elif line.startswith('"'):
                 in_declarations = False
-                self.render_nl(line)
+                self.render_nl(line, True)
+            elif line.startswith(':'):
+                in_declarations = False
+                self.render_nl(line, False)
             elif line.startswith('-'):
                 in_declarations = False
                 self.render_delimiter(line)
@@ -83,13 +86,14 @@ class RewriteRenderer:
         self.render_nl_core(precondition[2:])
         w('</div>')
 
-    def render_nl(self, nl: str):
+    def render_nl(self, nl: str, in_quotes: bool):
         w = self.buffer.append
-        if not nl.startswith('"') and nl.endswith('"'):
-            raise ValueError(f"Malformed NL line: {nl}")
-        b = nl[1:-1].strip()
+        if in_quotes:
+            if not nl.startswith('"') and nl.endswith('"'):
+                raise ValueError(f"Malformed NL line: {nl}")
+            nl = nl[1:-1].strip()
         w(f'<div class="rewrite-line">')
-        self.render_nl_core(b)
+        self.render_nl_core(nl)
         w('</div>')
 
 
@@ -115,7 +119,15 @@ class RewriteRenderer:
                     latex2mathml.converter.convert(part)
                 )
             else:
-                self.render_with_styled_placeholders(escape_html(part))
+                for sub_counter, subpart in enumerate(part.split('@')):
+                    is_regex = bool(sub_counter % 2)
+                    if is_regex:
+                        w = self.buffer.append
+                        w('<code class="highlight">')
+                        w(highlight(subpart.strip(), nbnf.NbnfLexer(), HtmlFormatter(nowrap=True)).strip())
+                        w('</code>')
+                    else:
+                        self.render_with_styled_placeholders(escape_html(subpart))
 
     def render_with_styled_placeholders(self, content: str, no_colons: bool = False):
         w = self.buffer.append
