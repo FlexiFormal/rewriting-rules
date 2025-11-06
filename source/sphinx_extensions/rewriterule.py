@@ -71,7 +71,9 @@ class RewriteRenderer:
         w(' : ')
         # w('<code>' + escape_html(regex.strip()) + '</code>')
         w('<code class="highlight">')
-        w(highlight(regex.strip(), nbnf.NbnfLexer(), HtmlFormatter(nowrap=True)).strip())
+        self.render_with_styled_placeholders(
+            highlight(regex.strip(), nbnf.NbnfLexer(), HtmlFormatter(nowrap=True)).strip()
+        )
         w('</code>')
         if examples.strip():
             w(' = ')
@@ -116,7 +118,13 @@ class RewriteRenderer:
             is_formula = bool(counter % 2)
             if is_formula:
                 self.render_with_styled_placeholders(
-                    latex2mathml.converter.convert(part)
+                    latex2mathml.converter.convert(
+                        re.sub(
+                            ':[a-zA-Z0-9_-]+:',
+                            '\\\\text{\\g<0>}',
+                            part
+                        )
+                    )
                 )
             else:
                 for sub_counter, subpart in enumerate(part.split('@')):
@@ -124,7 +132,9 @@ class RewriteRenderer:
                     if is_regex:
                         w = self.buffer.append
                         w('<code class="highlight">')
-                        w(highlight(subpart.strip(), nbnf.NbnfLexer(), HtmlFormatter(nowrap=True)).strip())
+                        self.render_with_styled_placeholders(
+                            highlight(subpart.strip(), nbnf.NbnfLexer(), HtmlFormatter(nowrap=True)).strip()
+                        )
                         w('</code>')
                     else:
                         self.render_with_styled_placeholders(escape_html(subpart))

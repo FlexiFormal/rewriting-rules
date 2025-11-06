@@ -20,6 +20,7 @@ class NbnfLexer(RegexLexer):
             (r'''('[^']*')|("[^"]*")''', String),
             (r'<<?[a-zA-Z0-9_-]*>?>', Name),
             (r'...', Name),
+            (r':[a-zA-Z0-9_-]+:', Name),   # placeholders
         ]
     }
 
