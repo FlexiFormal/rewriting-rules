@@ -14,6 +14,8 @@ NP : <NP> = "non-initial state"
 
 ":Adj: :Prep: :t: for :Det: :NP: :t:"
 
+--- Adjective Determiner Reduction
+
 ":Adj: :Prep: :Det: :NP: :t:"
 ```
 

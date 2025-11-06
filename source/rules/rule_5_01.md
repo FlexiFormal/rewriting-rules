@@ -13,6 +13,8 @@ P[a] : <Pred> = "$:a:^n = 1$ for some $n \in \mathbb{N}$"
 
 ":then: $:x: \in \{:y: \mid :P:[:y:]\}$"
 
+--- "Then" Comprehension Term Reduction
+
 ":then: :P:[:x:]"
 ```
 

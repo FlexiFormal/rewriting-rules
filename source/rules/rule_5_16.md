@@ -13,6 +13,8 @@ P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
 ":then: $\{:y: \mid :P:[:y:]\} \subseteq :X:$"
 
+--- Subset Comprehension Term Reduction
+
 ":then: $:y: \in :X:$ for all :y: with $:P:[:y:]$"
 ```
 

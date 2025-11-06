@@ -9,6 +9,8 @@ T_1, ..., T_n : <Term> = "$\mathbb{N}$", "$\mathbb{N}$"
 
 "$:t_1: \in :T_1:$ and ... and $:t_n: \in :T_n:$"
 
+--- Tuple Aggregation
+
 "$\langle :t_1:, \dots, :t_n: \rangle \in :T_1: \times \dots \times :T_n:$"
 ```
 

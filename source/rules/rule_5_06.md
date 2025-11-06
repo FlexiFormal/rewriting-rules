@@ -13,6 +13,8 @@ P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
 ":choose: a $:x: \in \{:y: \mid :P:[:y:]\}$"
 
+--- "Choose" Comprehension Term Reduction
+
 ":choose: a :x: with $:P:[:x:]$"
 ```
 

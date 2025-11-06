@@ -13,6 +13,8 @@ T_1, ..., T_n : <Term> = "$\mathbb{R}$", "$\mathbb{R}$"
 
 ":Det: :opt_NP: $:t_1:, \ldots, :t_n:$ with $\langle :t_1:, \ldots, :t_n: \rangle \in :T_1: \times \ldots \times :T_n:$"
 
+--- Tuple Determiner Reduction
+
 ":Det: $\langle :t_1:, \ldots, :t_n: \rangle \in :T_1: \times \ldots \times :T_n:$"
 ```
 

@@ -9,6 +9,8 @@ t : <Term> = "$x$"
 
 ":t: is :AP_1: or ... or :t: is :AP_n:"
 
+--- "Or"-AP Aggregation
+
 ":t: is :AP_1: or ... or :AP_n:"
 ```
 

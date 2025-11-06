@@ -11,6 +11,8 @@ VP : <VP> = "divides $n$"
 
 ":NP: :t: such that :t: :VP:"
 
+--- Verb Variable Reduction
+
 ":NP: :t: that :VP:"
 ```
 

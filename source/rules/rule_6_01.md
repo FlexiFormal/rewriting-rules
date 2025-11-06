@@ -9,6 +9,8 @@ b : <Term> = "$b$"
 
 "$:b: \in \{:a:\}$"
 
+--- Iota-Element Reduction
+
 "$:b: = :a:$"
 ```
 

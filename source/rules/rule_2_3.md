@@ -10,6 +10,8 @@ R[x] : <guarded identifier> = "$:x: \in Q \setminus F$"
 
 ":NP: :t: @such that | with@ :R:[:t:]"
 
+--- Atom Variable Reduction
+
 ":NP: :R:[:t:]"
 ```
 

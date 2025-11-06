@@ -15,6 +15,8 @@ P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
 ":choose: a $:x: \in \{:y: \mid :P:[:y:]\}$ that :VP:"
 
+--- "Choose"-VP Comprehension Term Reduction
+
 ":choose: a :x: that :VP: with $:P:[:x:]$"
 ```
 

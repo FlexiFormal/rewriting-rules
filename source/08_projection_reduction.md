@@ -16,6 +16,8 @@ i : <Term> = "$1 + 1$"
 
 "$\pi_{:i:}(\langle :a_1:, \dots, :a_n: \rangle)$"
 
+--- Projection Reduction
+
 ":a_j:"
 ```
 

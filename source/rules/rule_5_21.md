@@ -11,6 +11,8 @@ y : <Var> = "$y$"
 
 "subset :opt_x: of $\{:y: \mid :y: \text{ is a } :NP:\}$"
 
+--- Subset-NP Guard Reduction
+
 "set :opt_x: of :NP:"
 ```
 

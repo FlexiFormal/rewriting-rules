@@ -13,6 +13,8 @@ z : <Var> = "$z$"
 
 "$\{:t:[:y_1:, \dots, :y_n:] \mid :P:[:y_1:, \dots, :y_n:]\}$"
 
+--- Term Guard Reduction
+
 "$\{:z: \mid \text{there exist } :y_1:, \dots, :y_n: \text{ such that } :z: = :t:[:y_1:, \dots, :y_n:] \text{ and } :P:[:y_1:, \dots, :y_n:]\}$"
 ```
 

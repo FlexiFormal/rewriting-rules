@@ -17,6 +17,8 @@ P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
 ":Det: :opt_NP_or_AP: $:x: \in \{:y: \mid :P:[:y:]\}$ that is :AP:"
 
+--- Determiner-AP Comprehension Term Reduction
+
 ":Det: :AP: :opt_NP_or_AP: :x: with $:P:[:x:]$"
 ```
 

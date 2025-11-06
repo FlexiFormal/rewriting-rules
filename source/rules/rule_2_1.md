@@ -11,6 +11,8 @@ AP : <AP> = "applicable in $q$"
 
 ":NP: :t: @such that :t: is | with :t: being@ :AP:"
 
+--- Adjective Variable Reduction
+
 ":NP: :t: that is :AP:"
 ```
 

@@ -13,6 +13,8 @@ x : <Var> = "$\mathcal{A}$"
 
 ":noun: :x:"
 
+--- Variable Structure Expansion
+
 ":noun: $:x: := :t:$"
 ```
 

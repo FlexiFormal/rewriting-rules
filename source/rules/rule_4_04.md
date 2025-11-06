@@ -9,6 +9,8 @@ t : <Term> = "$x$"
 
 ":t: :VP_1: or ... or :t: :VP_n:"
 
+--- "Or"-VP Aggregation
+
 ":t: :VP_1: or ... or :VP_n:"
 ```
 

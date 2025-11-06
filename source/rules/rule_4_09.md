@@ -11,6 +11,8 @@ t : <Term> = "$x$"
 
 ":t: is :Det_1: :NP_1: or ... or :t: is :Det_n: :NP_n:"
 
+--- "Or"-NP Aggregation
+
 ":t: is :Det_1: :NP_1: or ... or :Det_n: :NP_n:"
 ```
 
