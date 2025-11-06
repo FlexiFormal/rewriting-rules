@@ -3,22 +3,22 @@ Rule 4.3: "And"-VP Aggregation
 
 
 ```{rewrite-rule}
-{ph}`VP_1`, ..., {ph}`VP_n` : {cat}`VP` = {nl}`intersects with $y$`, {nl}`contains $z$`
+VP_1, ..., VP_n : <VP> = "intersects with $y$", "contains $z$"
 
-{ph}`t` : {cat}`Term` = {nl}`$x$`
+t : <Term> = "$x$"
 
-{ph}`t` {ph}`VP_1` and ... and $x$ {ph}`VP_n`
+":t: :VP_1: and ... and :t: :VP_n:"
 
-{ph}`t` {ph}`VP_1` and ... and {ph}`VP_n`
+":t: :VP_1: and ... and :VP_n:"
 ```
 
 Examples
 --------
 
 ```{rewrite-rule}
-$x$ intersects with $y$ and $x$ contains $z$
+"$x$ intersects with $y$ and $x$ contains $z$"
 
-$x$ intersects with $y$ and contains $z$
+"$x$ intersects with $y$ and contains $z$"
 ```
 
 

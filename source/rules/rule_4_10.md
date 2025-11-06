@@ -3,22 +3,22 @@ Rule 4.10: "Neither"-AP Aggregation
 
 
 ```{rewrite-rule}
-{ph}`AP_1`, $\ldots$, {ph}`AP_n` : {cat}`AP` = {nl}`even`, {nl}`prime`
+AP_1, ..., AP_n : <AP> = "even", "prime"
 
-{ph}`t` : {cat}`Term` = {nl}`$x$`
+t : <Term> = "$x$"
 
-{ph}`t` is not {ph}`AP_1` and ... and {ph}`t` is not {ph}`AP_n`
+":t: is not :AP_1: and ... and :t: is not :AP_n:"
 
-{ph}`t` is neither {ph}`AP_1` nor ... nor {ph}`AP_n`
+":t: is neither :AP_1: nor ... nor :AP_n:"
 ```
 
 Examples
 --------
 
 ```{rewrite-rule}
-$x$ is not even and $x$ is not prime
+"$x$ is not even and $x$ is not prime"
 
-$x$ is neither even nor prime
+"$x$ is neither even nor prime"
 ```
 
 

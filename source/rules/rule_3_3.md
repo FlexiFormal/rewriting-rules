@@ -3,17 +3,17 @@ Rule 3.3: Tuple Determiner Reduction
 
 
 ```{rewrite-rule}
-{ph}`Det` : {cat}`Det` = {nl}`any`
+Det : <Det> = "any"
 
-{ph}`opt_NP` : [{cat}`NP`] = {nl}``
+opt_NP : [<NP>] = ""
 
-{ph}`t_1`, $\ldots$, {ph}`t_n` : {cat}`Term` = {nl}`$x$`, {nl}`$y$`
+t_1, ..., t_n : <Term> = "$x$", "$y$"
 
-{ph}`T_1`, $\ldots$, {ph}`T_n` : {cat}`Term` = {nl}`$\mathbb{R}$`, {nl}`$\mathbb{R}$`
+T_1, ..., T_n : <Term> = "$\mathbb{R}$", "$\mathbb{R}$"
 
-{ph}`Det` {ph}`opt_NP` {ph}`t_1`, $\ldots$, {ph}`t_n` with $\langle$ {ph}`t_1`, $\ldots$, {ph}`t_n` $\rangle \in$ {ph}`T_1` $\times \ldots \times$ {ph}`T_n`
+":Det: :opt_NP: $:t_1:, \ldots, :t_n:$ with $\langle :t_1:, \ldots, :t_n: \rangle \in :T_1: \times \ldots \times :T_n:$"
 
-{ph}`Det` $\langle$ {ph}`t_1`, $\ldots$, {ph}`t_n` $\rangle \in$ {ph}`T_1` $\times \ldots \times$ {ph}`T_n`
+":Det: $\langle :t_1:, \ldots, :t_n: \rangle \in :T_1: \times \ldots \times :T_n:$"
 ```
 
 ````{note}
@@ -21,32 +21,32 @@ This could also be considered a special case of
 a generalized form of [Rule 3.2](rule_3_2.md):
 
 ```{rewrite-rule}
-{ph}`Det` : {cat}`Det` = {nl}`those` 
+Det : <Det> = "those" 
 
-{ph}`opt_NP` : [{cat}`NP`] = {nl}`states`
+opt_NP : [<NP>] = "states"
 
-{ph}`t_1`, $\ldots$, {ph}`t_n` : {cat}`Term` = {nl}`$p$`, {nl}`$q$`
+t_1, ..., t_n : <Term> = "$p$", "$q$"
 
-{ph}`R`$[${ph}`x_1`, $\ldots$, {ph}`x_n`$]$ : {cat}`guarded identifier` = {nl}``{ph}`x_1`, {ph}`x_2` $\in Q \setminus F$``
+R[x_1, ..., x_n] : <guarded identifier> = ":x_1:, :x_2: $\in Q \setminus F$"
 
-{ph}`Det` {ph}`opt_NP` {ph}`t_1`, $\ldots$, {ph}`t_n` with {ph}`R`$[${ph}`t_1`, $\ldots$, {ph}`t_n`$]$
+":Det: :opt_NP: $:t_1:, \ldots, :t_n: with :R:[:t_1:, ..., :t_n:]"
 
-{ph}`Det` {ph}`opt_NP` {ph}`R`$[${ph}`t_1`, $\ldots$, {ph}`t_n`$]$
+":Det: :opt_NP: :R:[:t_1:, ..., :t_n:]"
 ```
 ````
 
 Example:
 
 ```{rewrite-rule}
-any $x, y$ with $\langle x, y \rangle \in \mathbb{R} \times \mathbb{R}$
+"any $x, y$ with $\langle x, y \rangle \in \mathbb{R} \times \mathbb{R}$"
 
-any $\langle x, y \rangle \in \mathbb{R} \times \mathbb{R}$
+"any $\langle x, y \rangle \in \mathbb{R} \times \mathbb{R}$"
 ```
 
 ```{rewrite-rule}
-those states $p, q$ with $p, q \in Q \setminus F$
+"those states $p, q$ with $p, q \in Q \setminus F$"
 
-those states $q \in Q \setminus F$
+"those states $q \in Q \setminus F$"
 ```
 
 

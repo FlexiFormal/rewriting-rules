@@ -3,22 +3,22 @@ Rule 4.1: "And"-AP Aggregation
 
 
 ```{rewrite-rule}
-{ph}`AP_1`, ..., {ph}`AP_n` : {cat}`AP` = {nl}`prime`, {nl}`greater than $5$`
+AP_1, ..., AP_n : <AP> = "prime", "greater than $5$"
 
-{ph}`t` : {cat}`Term` = {nl}`$x$`
+t : <Term> = "$x$"
 
-{ph}`t` is {ph}`AP_1` and ... and {ph}`t` is {ph}`AP_n`
+":t: is :AP_1: and ... and :t: is :AP_n:"
 
-{ph}`t` is {ph}`AP_1` and ... and {ph}`AP_n`
+":t: is :AP_1: and ... and :AP_n:"
 ```
 
 Examples
 --------
 
 ```{rewrite-rule}
-$x$ is prime and $x$ is greater than $5$
+"$x$ is prime and $x$ is greater than $5$"
 
-$x$ is prime and greater than $5$
+"$x$ is prime and greater than $5$"
 ```
 
 

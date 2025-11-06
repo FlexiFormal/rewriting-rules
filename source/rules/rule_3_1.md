@@ -2,19 +2,19 @@ Rule 3.1: Adjective Determiner Reduction
 ========================================
 
 ```{rewrite-rule}
-{ph}`Adj` : {cat}`Adj` = {nl}`applicable`
+Adj : <Adj> = "applicable"
 
-{ph}`Prep` : {cat}`Prep` = {nl}`in`
+Prep : <Prep> = "in"
 
-{ph}`t` : {cat}`Term` = {nl}`$q$`
+t : <Term> = "$q$"
 
-{ph}`Det` : {cat}`Det` = {nl}`a`
+Det : <Det> = "a"
 
-{ph}`NP` : {cat}`NP` = {nl}`non-initial state`
+NP : <NP> = "non-initial state"
 
-{ph}`Adj` {ph}`Prep` {ph}`t` for {ph}`Det` {ph}`NP` {ph}`t`
+":Adj: :Prep: :t: for :Det: :NP: :t:"
 
-{ph}`Adj` {ph}`Prep` {ph}`Det` {ph}`NP` {ph}`t`
+":Adj: :Prep: :Det: :NP: :t:"
 ```
 
 
@@ -22,7 +22,7 @@ Examples
 --------
 
 ```{rewrite-rule}
-applicable in $q$ for a non-initial state $q$
+"applicable in $q$ for a non-initial state $q$"
 
-applicable in a non-initial state $q$
+"applicable in a non-initial state $q$"
 ```

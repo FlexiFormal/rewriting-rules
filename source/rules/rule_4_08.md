@@ -3,24 +3,24 @@ Rule 4.8: "And"-NP Aggregation
 
 
 ```{rewrite-rule}
-{ph}`Det_1`, $\ldots$, {ph}`Det_n` : a | no = {nl}`a`, {nl}`no`
+Det_1, ..., Det_n : a | no = "a", "no"
 
-{ph}`NP_1`, $\ldots$, {ph}`NP_n` : {cat}`NP` = {nl}`prime number`, {nl}`even number`
+NP_1, ..., NP_n : <NP> = "prime number", "even number"
 
-{ph}`t` : {cat}`Term` = {nl}`$x$`
+t : <Term> = "$x$"
 
-{ph}`t` is {ph}`Det_1` {ph}`NP_1` and ... and {ph}`t` is {ph}`Det_n` {ph}`NP_n`
+":t: is :Det_1: :NP_1: and ... and :t: is :Det_n: :NP_n:"
 
-{ph}`t` is {ph}`Det_1` {ph}`NP_1` and ... and {ph}`Det_n` {ph}`NP_n`
+":t: is :Det_1: :NP_1: and ... and :Det_n: :NP_n:"
 ```
 
 Examples
 --------
 
 ```{rewrite-rule}
-$x$ is a prime number and $x$ no even number
+"$x$ is a prime number and $x$ no even number"
 
-$x$ a prime number and no even number
+"$x$ a prime number and no even number"
 ```
 
 

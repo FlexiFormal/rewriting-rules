@@ -2,24 +2,24 @@ Rule 3.2: Atom Determiner Reduction
 ===================================
 
 ```{rewrite-rule}
-{ph}`Det` : {cat}`Det` = {nl}`those`
+Det : <Det> = "those"
 
-{ph}`opt_NP` : [{cat}`NP`] = {nl}`states`
+opt_NP : [<NP>] = "states"
 
-{ph}`t` : {cat}`Term` = {nl}`$q$`
+t : <Term> = "$q$"
 
-{ph}`R`$[${ph}`x`$]$ : {cat}`guarded identifier` = {nl}``{ph}`x` $\in Q \setminus F$``
+R`[x] : <guarded identifier> = "$:x: \in Q \setminus F$"
 
-{ph}`Det` {ph}`opt_NP` {ph}`t` with {ph}`R`$[${ph}`t`$]$
+":Det: :opt_NP: :t: with :R:[:t:]"
 
-{ph}`Det` {ph}`opt_NP` {ph}`R`$[${ph}`t`$]$
+":Det: :opt_NP: :R:[:t:]"
 ```
 
 Example:
 
 ```{rewrite-rule}
-those states $q$ with $q \in Q \setminus F$
+"those states $q$ with $q \in Q \setminus F$"
 
-those states $q \in Q \setminus F$
+"those states $q \in Q \setminus F$"
 ```
 
