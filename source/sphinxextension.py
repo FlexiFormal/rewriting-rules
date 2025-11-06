@@ -1,3 +1,10 @@
+"""
+THIS FILE IS NOT USED ANYMORE AND WILL BE DELETED SOON.
+
+The relevant extensions are now in the ``sphinx_extensions`` folder.
+This file is just kept for reference until the migration is complete.
+"""
+
 from sphinx.util.docutils import SphinxRole, SphinxDirective
 
 from myst_parser.mocking import MockState

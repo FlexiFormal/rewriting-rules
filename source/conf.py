@@ -1,18 +1,21 @@
 import sys, pathlib
 
-sys.path.insert(0, str(pathlib.Path(__file__).parent))
+sys.path.insert(0, str(pathlib.Path(__file__).parent / 'sphinx_extensions'))
 
 project = 'rewriting-rules'
 copyright = '2025, KWARC'
 author = 'KWARC'
 
 extensions = [
-        'myst_parser',
-        'sphinxextension',
+    'myst_parser',
+
+    # our custom extensions
+    'nbnf',
+    'rewriterule',
 ]
 
 myst_enable_extensions = [
-        'dollarmath'
+    'dollarmath'
 ]
 
 templates_path = ['_templates']
