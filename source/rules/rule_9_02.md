@@ -11,7 +11,7 @@ x_1, ..., x_n : <Var> = "$t_1$", $\dots$, "$t_n$"
 
 i : <Var> = "$i$"
 
-:noun: := "A :noun: is a @'structure' | 'pair' | 'triple' | ...@ :t: @'with' | 'of' | 'where'@ ..."
+:noun: := "A :noun: is a @('structure' | 'pair' | 'triple' | ...)@ :t: @('with' | 'of' | 'where')@ ..."
 
 "sequence $:x_1:, \dots, :x_n:$ of :noun:"
 

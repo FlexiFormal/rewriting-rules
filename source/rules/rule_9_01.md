@@ -9,7 +9,7 @@ t : <Term> = "$\langle Q, \Sigma, \delta, q_0, F \rangle$"
 
 x : <Var> = "$\mathcal{A}$"
 
-:noun: := "A :noun: is a @'structure' | 'pair' | 'triple' | ...@ :t: @'with' | 'of' | 'where'@ ..."
+:noun: := "A :noun: is a @('structure' | 'pair' | 'triple' | ...)@ :t: @('with' | 'of' | 'where')@ ..."
 
 ":noun: :x:"
 

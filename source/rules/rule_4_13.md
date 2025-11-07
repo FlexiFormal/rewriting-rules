@@ -7,7 +7,7 @@ VP_1, ..., VP_n : <VP> = "contain $y$", "include $z$"
 
 t : <Term> = "$x$"
 
-":t: :VP_1: or ... or :t: :VP_n: @and | but@ :t: does not both :VP_1: and ... and :VP_n:"
+":t: :VP_1: or ... or :t: :VP_n: @(and | but)@ :t: does not both :VP_1: and ... and :VP_n:"
 
 --- "Either"-VP Aggregation
 

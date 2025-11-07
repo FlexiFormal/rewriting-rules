@@ -13,7 +13,7 @@ i : <Var> = "$i$"
 
 I : <Term> = "$I$"
 
-:noun: := "A :noun: is a @'structure' | 'pair' | 'triple' | ...@ :t: @'with' | 'of' | 'where'@ ..."
+:noun: := "A :noun: is a @('structure' | 'pair' | 'triple' | ...)@ :t: @('with' | 'of' | 'where')@ ..."
 
 "family $(:x:_{:i:})_{:i: \in :I:}$ of :noun:"
 
