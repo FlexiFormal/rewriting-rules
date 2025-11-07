@@ -30,6 +30,7 @@ class RewriteRenderer:
 
         w = self.buffer.append
 
+        w('<div class="rewrite-rule-container-wrapper">')
         w('<div class="rewrite-rule-container">')
 
         # declarations come first, afterwards we can identify lines
@@ -56,6 +57,7 @@ class RewriteRenderer:
             else:
                 raise ValueError(f"Cannot classify line in rewrite rule: {line}")
 
+        w('</div>')
         w('</div>')
 
     # ---------------------------
@@ -104,8 +106,8 @@ class RewriteRenderer:
         # w('<hr class="rewrite-rule-separator"/>')
         w('<div class="divider-wrapper">')
         w('<div class="divider-line"></div>')
+        w('<div class="divider-label-wrapper">')
         w('<div class="divider-label">')
-        w('<div style="width: 100em;">')
         # w(escape_html(delimiter.lstrip('-').strip()).replace(' ', '&nbsp;') or '&nbsp;')
         w(escape_html(delimiter.lstrip('-').strip()) or '&nbsp;')
         w('</div>')
