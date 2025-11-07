@@ -22,5 +22,7 @@ Examples
 ```{rewrite-rule}
 "a state $q$ with $q \in Q \setminus F$"
 
+--- Atom Variable Reduction
+
 "a state $q \in Q \setminus F$"
 ```

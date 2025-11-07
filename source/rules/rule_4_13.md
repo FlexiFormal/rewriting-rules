@@ -20,6 +20,8 @@ Examples
 ```{rewrite-rule}
 "$x$ contains $y$ or $x$ includes $z$ but $x$ does not both contain $y$ and include $z$"
 
+--- "Either"-VP Aggregation
+
 "$x$ either contains $y$ or includes $z$"
 ```
 

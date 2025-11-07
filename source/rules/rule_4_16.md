@@ -18,6 +18,8 @@ Examples
 ```{rewrite-rule}
 "it is wrong that $x$ is prime and that $x$ and $y$ have a common divisor"
 
+--- "Neither"-PP Aggregation
+
 "neither $x$ is prime nor $x$ and $y$ have a common divisor"
 ```
 

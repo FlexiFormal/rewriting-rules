@@ -20,6 +20,8 @@ Examples
 ```{rewrite-rule}
 "$x$ is not even and $x$ is not prime"
 
+--- "Neither"-AP Aggregation
+
 "$x$ is neither even nor prime"
 ```
 

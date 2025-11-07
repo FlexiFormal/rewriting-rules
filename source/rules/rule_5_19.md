@@ -27,5 +27,7 @@ Examples
 ```{rewrite-rule}
 "$\{\langle p,n \rangle \in \mathbb{N} \times \mathbb{N} \mid p \text{ is a prime divisor of } n\}$"
 
+--- Relation-Term Guard Reduction
+
 "$\{z \mid \text{there exist } p,n \text{ such that } z = \langle p,n \rangle \text{ and } z \in \mathbb{N} \times \mathbb{N} \text{ and } p \text{ is a prime divisor of } n\}$"
 ```

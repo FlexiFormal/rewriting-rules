@@ -18,6 +18,8 @@ Examples
 ```{rewrite-rule}
 "$x$ is prime or $x$ and $y$ have a common divisor but it is not the case that both $x$ is prime and $x$ and $y$ have a common divisor"
 
+--- "Either"-PP Aggregation
+
 "either $x$ isi prime or $x$ and $y$ have a common divisor"
 ```
 

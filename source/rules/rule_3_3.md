@@ -33,6 +33,8 @@ R[x_1, ..., x_n] : <guarded identifier> = ":x_1:, :x_2: $\in Q \setminus F$"
 
 ":Det: :opt_NP: $:t_1:, \ldots, :t_n: with :R:[:t_1:, ..., :t_n:]"
 
+---
+
 ":Det: :opt_NP: :R:[:t_1:, ..., :t_n:]"
 ```
 ````
@@ -42,11 +44,15 @@ Example:
 ```{rewrite-rule}
 "any $x, y$ with $\langle x, y \rangle \in \mathbb{R} \times \mathbb{R}$"
 
+--- Tuple Determiner Reduction
+
 "any $\langle x, y \rangle \in \mathbb{R} \times \mathbb{R}$"
 ```
 
 ```{rewrite-rule}
 "those states $p, q$ with $p, q \in Q \setminus F$"
+
+--- Tuple Determiner Reduction
 
 "those states $q \in Q \setminus F$"
 ```

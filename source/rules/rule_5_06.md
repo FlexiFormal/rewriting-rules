@@ -25,5 +25,7 @@ Examples
 ```{rewrite-rule}
 "choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
+--- "Choose" Comprehension Term Reduction
+
 "choose an $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

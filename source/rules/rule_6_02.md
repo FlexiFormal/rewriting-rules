@@ -21,5 +21,7 @@ Examples
 ```{rewrite-rule}
 "$\{n - 5\} \subseteq \mathbb{Z}$"
 
+--- Iota-Subset Reduction
+
 "$n - 5 \in \mathbb{Z}$"
 ```

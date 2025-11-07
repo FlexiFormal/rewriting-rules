@@ -31,5 +31,7 @@ Examples
 
 "family $(e_i)_{i \in I}$ of edges"
 
+--- Family Structure Expansion
+
 "family $(e_i)_{i \in I}$ of edges $e_i := \langle v_i, v'_i \rangle$"
 ```

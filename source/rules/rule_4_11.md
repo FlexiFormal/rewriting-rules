@@ -20,6 +20,8 @@ Examples
 ```{rewrite-rule}
 "$x$ is odd or $x$ is prime but $x$ is not both odd or prime"
 
+--- "Either"-AP Aggregation
+
 "$x$ is either odd or prime"
 ```
 

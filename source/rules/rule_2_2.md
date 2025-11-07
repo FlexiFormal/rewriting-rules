@@ -23,5 +23,7 @@ Examples
 ```{rewrite-rule}
 "a prime number $p$ such that $p$ divides $n$"
 
+--- Verb Variable Reduction
+
 "a prime number $p$ that divides $n$"
 ```

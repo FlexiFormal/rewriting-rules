@@ -27,5 +27,7 @@ Examples
 
 "finite automaton $\mathcal{A}$"
 
+--- Variable Structure Expansion
+
 "finite automaton $\mathcal{A} := \langle Q, \Sigma, \delta, q_0, F \rangle$"
 ```

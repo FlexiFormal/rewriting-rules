@@ -22,6 +22,8 @@ Examples
 ```{rewrite-rule}
 "$x$ is a proper class or $x$ is a set"
 
+--- "Or"-NP Aggregation
+
 "$x$ a proper class or a set"
 ```
 

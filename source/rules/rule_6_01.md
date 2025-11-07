@@ -21,5 +21,7 @@ Examples
 ```{rewrite-rule}
 "$b \in \{0\}$"
 
+--- Iota-Element Reduction
+
 "$b = 0$"
 ```

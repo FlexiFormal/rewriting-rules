@@ -27,17 +27,23 @@ Examples
 ```{rewrite-rule}
 "all $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
+--- Determiner Comprehension Term Reduction
+
 "all $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```
 
 ```{rewrite-rule}
 "those complex numbers $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
+--- Determiner Comprehension Term Reduction
+
 "those complex numbers $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```
 
 ```{rewrite-rule}
 "certain imaginary $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
+
+--- Determiner Comprehension Term Reduction
 
 "certain imaginary $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

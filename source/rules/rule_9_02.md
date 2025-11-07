@@ -29,5 +29,7 @@ Examples
 
 "sequence $t_1, \dots, t_n$ of transitions"
 
+--- Sequence Structure Expansion
+
 "sequence $t_1, \dots, t_n$ of transitions $t_i := \langle q_i, c_i, q'_i \rangle$"
 ```

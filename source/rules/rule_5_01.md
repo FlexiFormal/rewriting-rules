@@ -25,5 +25,7 @@ Examples
 ```{rewrite-rule}
 "assume $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
+--- "Then" Comprehension Term Reduction
+
 "assume $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

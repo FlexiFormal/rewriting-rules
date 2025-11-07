@@ -22,6 +22,8 @@ Examples
 ```{rewrite-rule}
 "$x$ is a prime or $x$ is no even number but $x$ is not both a prime and no even number"
 
+--- "Either"-NP Aggregation
+
 "$x$ is either a prime nor no even number"
 ```
 

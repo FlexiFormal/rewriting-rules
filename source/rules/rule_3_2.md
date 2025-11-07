@@ -22,6 +22,8 @@ Example:
 ```{rewrite-rule}
 "those states $q$ with $q \in Q \setminus F$"
 
+--- Atom Determiner Reduction
+
 "those states $q \in Q \setminus F$"
 ```
 

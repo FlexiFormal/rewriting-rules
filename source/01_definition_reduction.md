@@ -25,5 +25,7 @@ Examples
 
 "an input symbol $a$ with $\delta(a,q)\ne\emptyset$ for all final states $q$"
 
+--- Definition Reduction
+
 "an input symbol $a$ such that $a$ is applicable in $q$ for all final states $q$"
 ```

@@ -30,5 +30,7 @@ Examples
 
 "$\pi_{1 + 1}(\langle \sin(x), \cos(x + 1) \rangle)$"
 
+--- Projection Reduction
+
 "$\cos(x + 1)$"
 ```

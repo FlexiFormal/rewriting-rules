@@ -20,5 +20,7 @@ Examples
 ```{rewrite-rule}
 "$n \in \mathbb{N}$ and $\sqrt{n} \in \mathbb{N}$"
 
+--- Tuple Aggregation
+
 "$\langle n, \sqrt{n} \rangle \in \mathbb{N} \times \mathbb{N}$"
 ```

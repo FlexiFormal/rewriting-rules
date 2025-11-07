@@ -23,9 +23,11 @@ For instance if we were to blindly eliminate the variable $X$
 in this example
 
 ```{rewrite-rule}
-Consider a set $X$ such that $X$ is infinite.
+"Consider a set $X$ such that $X$ is infinite."
 
-Consider a set that is finite.
+---
+
+"Consider a set that is finite."
 ```
  any reference to $X$ that occurs in the context of that statement
  would suddenly be undeclared.

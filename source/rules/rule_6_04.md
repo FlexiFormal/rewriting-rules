@@ -44,5 +44,7 @@ the above rewrite rule:
 
 "$q' \in \delta(q,c)$"
 
+--- Parametrized Iota-Conversion
+
 "$q' = \delta(q,c)$"
 ```

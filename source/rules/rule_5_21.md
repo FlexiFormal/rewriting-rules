@@ -23,5 +23,7 @@ Examples
 ```{rewrite-rule}
 "subsets of $\{z \mid z \text{ is a complex number}\}$"
 
+--- Subset-NP Guard Reduction
+
 "sets of complex numbers"
 ```

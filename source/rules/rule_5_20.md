@@ -23,5 +23,7 @@ Examples
 ```{rewrite-rule}
 "element $x$ of $\{z \mid z \text{ is a complex number}\}$"
 
+--- Element-NP Guard Reduction
+
 "complex number $x$"
 ```

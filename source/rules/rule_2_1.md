@@ -23,5 +23,7 @@ Examples
 ```{rewrite-rule}
 "an input symbol $a$ such that $a$ is applicable in $q$"
 
+--- Adjective Variable Reduction
+
 "an input symbol $a$ that is applicable in $q$"
 ```
