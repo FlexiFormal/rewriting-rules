@@ -20,7 +20,7 @@ class NbnfLexer(RegexLexer):
             (r'''('[^']*')|("[^"]*")''', String),
             (r'''[a-zA-Z0-9_-][a-zA-Z0-9_\-\']*''', String),
             (r'<<?[a-zA-Z0-9_ -]*>?>', Name),
-            (r'...', Name),
+            (r'\.\.\.', Name),
             (r':[a-zA-Z0-9_-]+:', Name),   # placeholders
         ]
     }
@@ -31,7 +31,10 @@ def setup(app):
 if __name__ == '__main__':
     # Simple test code
     from pygments import highlight
-    from pygments.formatters import TerminalFormatter
+    from pygments.formatters import TerminalFormatter, HtmlFormatter
 
-    code = '[<Var>]'
+    # code = 'if :Prop: then we have | :Prop: entails | :Prop: implies'
+    code = '[:abc: <def>]'
     print(highlight(code, NbnfLexer(), TerminalFormatter()))
+    # The html formatter shows the result more clearly
+    print(highlight(code, NbnfLexer(), HtmlFormatter(nowrap=True)))
