@@ -5,15 +5,15 @@ Rule 5.20: Element-NP Guard Reduction
 ```{rewrite-rule}
 NP : <NP> = "complex number"
 
-opt_x : [<Var>] = "$x$"
+x_opt : [<Var>] = "$x$"
 
 y : <Var> = "$y$"
 
-"element :opt_x: of $\{:y: \mid :y: \text{ is a } :NP:\}$"
+"element :x_opt: of $\{:y: \mid :y: \text{ is a } :NP:\}$"
 
 --- Element-NP Guard Reduction
 
-":NP: :opt_x:"
+":NP: :x_opt:"
 ```
 
 

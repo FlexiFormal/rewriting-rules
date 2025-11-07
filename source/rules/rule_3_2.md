@@ -4,17 +4,17 @@ Rule 3.2: Atom Determiner Reduction
 ```{rewrite-rule}
 Det : <Det> = "those"
 
-opt_NP : [<NP>] = "states"
+NP_opt : [<NP>] = "states"
 
 t : <Term> = "$q$"
 
-R`[x] : <guarded identifier> = "$:x: \in Q \setminus F$"
+R[x] : <guarded identifier> = "$:x: \in Q \setminus F$"
 
-":Det: :opt_NP: :t: with :R:[:t:]"
+":Det: :NP_opt: :t: with :R:[:t:]"
 
 --- Atom Determiner Reduction
 
-":Det: :opt_NP: :R:[:t:]"
+":Det: :NP_opt: :R:[:t:]"
 ```
 
 Example:

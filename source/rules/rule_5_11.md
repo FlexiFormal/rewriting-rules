@@ -5,7 +5,7 @@ Rule 5.11: Determiner Comprehension Term Reduction
 ```{rewrite-rule}
 Det : <Det> = "all"
 
-opt_NP_or_AP : [<NP> | <AP>] = ""
+NPorAP_opt : [<NP> | <AP>] = ""
 
 x : <Var> = "$x$"
 
@@ -13,11 +13,11 @@ y : <Var> = "$z$"
 
 P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-":Det: :opt_NP_or_AP: $:x: \in \{:y: \mid :P:[:y:]\}$"
+":Det: :NPorAP_opt: $:x: \in \{:y: \mid :P:[:y:]\}$"
 
 --- Determiner Comprehension Term Reduction
 
-":Det: :opt_NP_or_AP: :x: with $:P:[:x:]$"
+":Det: :NPorAP_opt: :x: with $:P:[:x:]$"
 ```
 
 

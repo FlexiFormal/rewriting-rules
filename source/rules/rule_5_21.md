@@ -5,15 +5,15 @@ Rule 5.21: Subset-NP Guard Reduction
 ```{rewrite-rule}
 NP : <NP> = "complex number"
 
-opt_x : [<Var>] = "$x$"
+x_opt : [<Var>] = "$x$"
 
 y : <Var> = "$y$"
 
-"subset :opt_x: of $\{:y: \mid :y: \text{ is a } :NP:\}$"
+"subset :x_opt: of $\{:y: \mid :y: \text{ is a } :NP:\}$"
 
 --- Subset-NP Guard Reduction
 
-"set :opt_x: of :NP:"
+"set :x_opt: of :NP:"
 ```
 
 

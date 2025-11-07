@@ -5,7 +5,7 @@ Rule 5.14: Determiner-VP Comprehension Term Reduction
 ```{rewrite-rule}
 Det : <Det> = "all"
 
-opt_NP_or_AP : [<NP> | <AP>] = ""
+NPorAP_opt : [<NP> | <AP>] = ""
 
 VP : <VP> = "solve the equation $E$"
 
@@ -15,11 +15,11 @@ y : <Var> = "$z$"
 
 P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-":Det: :opt_NP_or_AP: $:x: \in \{:y: \mid :P:[:y:]\}$ that :VP:"
+":Det: :NPorAP_opt: $:x: \in \{:y: \mid :P:[:y:]\}$ that :VP:"
 
 --- Determiner-VP Comprehension Term Reduction
 
-":Det: :opt_NP_or_AP: :x: that :VP: with $:P:[:x:]$"
+":Det: :NPorAP_opt: :x: that :VP: with $:P:[:x:]$"
 ```
 
 

@@ -5,7 +5,7 @@ Rule 5.13: Determiner-AP Comprehension Term Reduction
 ```{rewrite-rule}
 Det : <Det> = "all"
 
-opt_NP_or_AP : [<NP> | <AP>] = ""
+NPorAP_opt : [<NP> | <AP>] = ""
 
 AP : <AP> = "imaginary"
 
@@ -15,11 +15,11 @@ y : <Var> = "$z$"
 
 P[a] : <Pred> = "$:a:^n = 1 \text{ for some } n \in \mathbb{N}$"
 
-":Det: :opt_NP_or_AP: $:x: \in \{:y: \mid :P:[:y:]\}$ that is :AP:"
+":Det: :NPorAP_opt: $:x: \in \{:y: \mid :P:[:y:]\}$ that is :AP:"
 
 --- Determiner-AP Comprehension Term Reduction
 
-":Det: :AP: :opt_NP_or_AP: :x: with $:P:[:x:]$"
+":Det: :AP: :NPorAP_opt: :x: with $:P:[:x:]$"
 ```
 
 
