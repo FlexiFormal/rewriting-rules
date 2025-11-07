@@ -36,6 +36,10 @@
     width: fit-content;
 }
 
+.rewrite-rule-container:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
 .rewrite-rule-separator {
     width: 100%;
     margin: 2px 0;
