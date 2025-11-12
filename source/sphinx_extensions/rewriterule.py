@@ -129,7 +129,7 @@ class RewriteRenderer:
                             '\\\\text{\\g<0>}',
                             part
                         )
-                    )
+                    ).replace('<math ', '<math data-mathjax="false" ')
                 )
             else:
                 for sub_counter, subpart in enumerate(part.split('@')):
@@ -188,6 +188,42 @@ def visit_rewrite_node(self, node):
 def depart_rewrite_node(self, node):
     pass
 
+class mymathnode(nodes.General, nodes.Element):
+    def __init__(self, latex):
+        super().__init__()
+        self.latex = latex
+
+def visit_mymathnode(self, node):
+    self.body.append(latex2mathml.converter.convert(
+        re.sub(
+            ':[a-zA-Z0-9_-]+:',
+            '\\\\text{\\g<0>}',
+            node.latex
+        )
+    ).replace('<math ', '<math data-mathjax="false" '))
+
+def depart_mymathnode(self, node):
+    pass
+
+
+def process_dollar_math(app, doctree, fromdocname):
+    for node in doctree.findall(nodes.Element):
+        new_children: list[nodes.Node] = []
+        for i, child in enumerate(node.children):
+            if isinstance(child, nodes.Text):
+                parts = child.astext().split('$')
+                for counter, part in enumerate(parts):
+                    is_formula = bool(counter % 2)
+                    if is_formula:
+                        if part:
+                            new_children.append(mymathnode(part))
+                    else:
+                        if part:
+                            new_children.append(nodes.Text(part))
+            else:
+                new_children.append(child)
+        node.children = new_children
+
 
 def setup(app):
     app.add_directive('rewrite-rule', RewriteDirective)
@@ -195,6 +231,11 @@ def setup(app):
         rewriterule_node,
         html=(visit_rewrite_node, depart_rewrite_node),
     )
+    app.add_node(
+        mymathnode,
+        html=(visit_mymathnode, depart_mymathnode),
+    )
+    app.connect('doctree-resolved', process_dollar_math)
 
 
     return {

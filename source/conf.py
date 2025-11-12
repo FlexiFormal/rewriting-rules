@@ -15,7 +15,7 @@ extensions = [
 ]
 
 myst_enable_extensions = [
-    'dollarmath'
+    # 'dollarmath'
 ]
 
 templates_path = ['_templates']
