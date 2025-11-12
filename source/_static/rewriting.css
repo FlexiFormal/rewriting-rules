@@ -56,6 +56,11 @@
     width: max-content;
     margin-left: auto;
     margin-right: auto;
+    display: block ruby;
+}
+
+.rewrite-line-nl {
+    display: inline;
 }
 
 .divider-wrapper {

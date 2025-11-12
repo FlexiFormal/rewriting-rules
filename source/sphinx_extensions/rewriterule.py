@@ -97,7 +97,9 @@ class RewriteRenderer:
                 raise ValueError(f"Malformed NL line: {nl}")
             nl = nl[1:-1].strip()
         w(f'<div class="rewrite-line">')
+        w('<div class="rewrite-line-nl">')
         self.render_nl_core(nl)
+        w('</div>')
         w('</div>')
 
 
