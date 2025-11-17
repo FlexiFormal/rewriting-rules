@@ -40,8 +40,8 @@
     width: fit-content;
 }
 
-.rewrite-rule-container:not(:last-of-type) {
-    margin-bottom: 20px;
+.rewrite-rule-container-wrapper:not(:last-of-type) {
+    margin-bottom: 30px;
 }
 
 .rewrite-rule-separator {
