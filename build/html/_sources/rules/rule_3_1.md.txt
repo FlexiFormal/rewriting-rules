@@ -26,5 +26,7 @@ Examples
 ```{rewrite-rule}
 "applicable in $q$ for a non-initial state $q$"
 
+--- Adjective Determiner Reduction
+
 "applicable in a non-initial state $q$"
 ```

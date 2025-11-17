@@ -7,7 +7,7 @@ VP : <VP> = "divide $5$"
 
 x : <Term> = "$x$"
 
-"it @is true | is the case | holds@ that :x: :VP:"
+"it @(is true | is the case | holds)@ that :x: :VP:"
 
 --- Modal "True"-VP Reduction
 
@@ -20,6 +20,8 @@ Examples
 
 ```{rewrite-rule}
 "it is the case that $x$ divides $5$"
+
+--- Modal "True"-VP Reduction
 
 "$x$ divides $5$"
 ```

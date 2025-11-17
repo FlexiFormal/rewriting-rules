@@ -9,7 +9,7 @@ NP : <NP> = "prime number"
 
 x : <Term> = "$x$"
 
-"it @is wrong | is false | is not the case | does not hold@ that :x: is :Det: :NP:"
+"it @(is wrong | is false | is not the case | does not hold)@ that :x: is :Det: :NP:"
 
 --- Modal "False"-NP Reduction
 
@@ -22,6 +22,8 @@ Examples
 
 ```{rewrite-rule}
 "it does not hold that $n$ is a prime number"
+
+--- Modal "False"-NP Reduction
 
 "$n$ is not a prime number"
 ```

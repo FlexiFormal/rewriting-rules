@@ -9,16 +9,14 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
-    <link rel="stylesheet" type="text/css" href="_static/rewriting.css?v=ff58a147" />
+    <link rel="stylesheet" type="text/css" href="_static/rewriting.css?v=b865d8cc" />
     <script src="_static/documentation_options.js?v=5929fcd5"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Section 8: Projection Reduction" href="08_projection_reduction.html" />
-    <link rel="prev" title="Rule 6.4: Parametrized \(\iota\)-Conversion" href="rules/rule_6_04.html" />
+    <link rel="prev" title="Rule 6.4: Parametrized Iota Conversion" href="rules/rule_6_04.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -36,13 +34,13 @@
 
           <div class="body" role="main">
             
-  <section class="tex2jax_ignore mathjax_ignore" id="section-7-equality-conversion">
+  <section id="section-7-equality-conversion">
 <h1>Section 7: Equality Conversion<a class="headerlink" href="#section-7-equality-conversion" title="Link to this heading">¶</a></h1>
 <p>Provalby equal expressions can be replaced by each other:</p>
-<div class="rewrite-rule-container"><div class="rewrite-line"><span class="placeholder">A</span> : <code class="highlight"><span class="n">&lt;Term&gt;</span></code> = "<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mo>&#x022C3;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi>&#x02115;</mi></mrow></msub><msup><mi>R</mi><mi>n</mi></msup></mrow></math>"</div><div class="rewrite-line"><span class="placeholder">B</span> : <code class="highlight"><span class="n">&lt;Term&gt;</span></code> = "<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>R</mi><mo>&#x0002B;</mo></msup></mrow></math>"</div><div class="rewrite-line"><span class="precondition-symbol">⊢</span> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext><span class="placeholder">A</span></mtext><mo>&#x0003D;</mo><mtext><span class="placeholder">B</span></mtext></mrow></math></div><div class="rewrite-line"><span class="placeholder">A</span></div><div class="divider-wrapper"><div class="divider-line"></div><div class="divider-label"><div style="width: 100em;">Equality Conversion</div></div></div><div class="rewrite-line"><span class="placeholder">B</span></div></div><section id="examples">
+<div class="rewrite-rule-container-wrapper"><div class="rewrite-rule-container"><div class="rewrite-line"><span class="placeholder">A</span> : <code class="highlight"><span class="n">&lt;Term&gt;</span></code> = "<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mo>&#x022C3;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi>&#x02115;</mi></mrow></msub><msup><mi>R</mi><mi>n</mi></msup></mrow></math>"</div><div class="rewrite-line"><span class="placeholder">B</span> : <code class="highlight"><span class="n">&lt;Term&gt;</span></code> = "<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>R</mi><mo>&#x0002B;</mo></msup></mrow></math>"</div><div class="rewrite-line"><span class="precondition-symbol">⊢</span> <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mtext><span class="placeholder">A</span></mtext><mo>&#x0003D;</mo><mtext><span class="placeholder">B</span></mtext></mrow></math></div><div class="rewrite-line"><div class="rewrite-line-nl"><span class="placeholder">A</span></div></div><div class="divider-wrapper"><div class="divider-line"></div><div class="divider-label-wrapper"><div class="divider-label">Equality Conversion</div></div></div><div class="rewrite-line"><div class="rewrite-line-nl"><span class="placeholder">B</span></div></div></div></div><section id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
-<p>Let <span class="math notranslate nohighlight">\(R^+\)</span> denote the transitive closure of a relation <span class="math notranslate nohighlight">\(R\)</span>.</p>
-<div class="rewrite-rule-container"><div class="rewrite-line"><span class="precondition-symbol">⊢</span> <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mo>&#x022C3;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi>&#x02115;</mi></mrow></msub><msup><mi>R</mi><mi>n</mi></msup><mo>&#x0003D;</mo><msup><mi>R</mi><mo>&#x0002B;</mo></msup></mrow></math></div><div class="rewrite-line"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mo>&#x022C3;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi>&#x02115;</mi></mrow></msub><msup><mi>R</mi><mi>n</mi></msup></mrow></math></div><div class="rewrite-line"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>R</mi><mo>&#x0002B;</mo></msup></mrow></math></div></div></section>
+<p>Let <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>R</mi><mo>&#x0002B;</mo></msup></mrow></math> denote the transitive closure of a relation <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>R</mi></mrow></math>.</p>
+<div class="rewrite-rule-container-wrapper"><div class="rewrite-rule-container"><div class="rewrite-line"><span class="precondition-symbol">⊢</span> <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mo>&#x022C3;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi>&#x02115;</mi></mrow></msub><msup><mi>R</mi><mi>n</mi></msup><mo>&#x0003D;</mo><msup><mi>R</mi><mo>&#x0002B;</mo></msup></mrow></math></div><div class="rewrite-line"><div class="rewrite-line-nl"><math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mo>&#x022C3;</mo><mrow><mi>n</mi><mo>&#x02208;</mo><mi>&#x02115;</mi></mrow></msub><msup><mi>R</mi><mi>n</mi></msup></mrow></math></div></div><div class="divider-wrapper"><div class="divider-line"></div><div class="divider-label-wrapper"><div class="divider-label">Equality Conversion</div></div></div><div class="rewrite-line"><div class="rewrite-line-nl"><math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>R</mi><mo>&#x0002B;</mo></msup></mrow></math></div></div></div></div></section>
 </section>
 
 
@@ -80,7 +78,7 @@
 <li class="toctree-l1"><a class="reference internal" href="03_determiner_reduction.html">Section 3: Determiner Reduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_aggregation.html">Section 4: Aggregation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_comprehension_term_reduction.html">Section 5: Comprehension Term Reduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_iota_conversion.html">Section 6: <span class="math notranslate nohighlight">\(\iota\)</span>-Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_iota_conversion.html">Section 6: Iota Conversion</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Section 7: Equality Conversion</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
 </ul>
@@ -95,7 +93,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="rules/rule_6_04.html" title="previous chapter">Rule 6.4: Parametrized <span class="math notranslate nohighlight">\(\iota\)</span>-Conversion</a></li>
+      <li>Previous: <a href="rules/rule_6_04.html" title="previous chapter">Rule 6.4: Parametrized Iota Conversion</a></li>
       <li>Next: <a href="08_projection_reduction.html" title="next chapter">Section 8: Projection Reduction</a></li>
   </ul></li>
 </ul>

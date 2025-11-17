@@ -27,5 +27,7 @@ Examples
 
 "$x$ does not not intersect with $y$"
 
+--- VP Double Negation Elimination
+
 "$x$ intersects with $y$"
 ```

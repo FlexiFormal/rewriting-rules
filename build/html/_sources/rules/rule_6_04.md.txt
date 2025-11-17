@@ -1,5 +1,5 @@
-Rule 6.4: Parametrized $\iota$-Conversion
-=========================================
+Rule 6.4: Parametrized Iota Conversion
+======================================
 
 
 ```{rewrite-rule}
@@ -43,6 +43,8 @@ the above rewrite rule:
 |- $\forall (q,c) \in Q \times \Sigma. |\delta(q,c)| = 1$
 
 "$q' \in \delta(q,c)$"
+
+--- Parametrized Iota-Conversion
 
 "$q' = \delta(q,c)$"
 ```

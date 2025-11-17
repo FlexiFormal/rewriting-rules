@@ -25,17 +25,23 @@ Examples
 ```{rewrite-rule}
 "it is provable that $x$ is a large cardinal"
 
+--- Generic Modal NP Reduction
+
 "$x$ is provably a large cardinal"
 ```
 
 ```{rewrite-rule}
 "it is necessary that $x$ is an element of the unit circle"
 
+--- Generic Modal NP Reduction
+
 "$x$ is necessarily an element of the unit circle"
 ```
 
 ```{rewrite-rule}
 "it is possible $x$ is a counterexample of the Riemann Hypothesis"
+
+--- Generic Modal NP Reduction
 
 "$x$ is possibly a counterexample of the Riemann Hypothesis"
 ```

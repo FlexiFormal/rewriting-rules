@@ -20,5 +20,7 @@ Examples
 ```{rewrite-rule}
 "$n \in \mathbb{Z}$ and $n \in \{ x \in \mathbb{R} \mid x^3 \geq x^2 \}$"
 
+--- "And"-Element Aggregation
+
 "$n \in \mathbb{Z} \cap \{ x \in \mathbb{R} \mid x^3 \geq x^2 \}$"
 ```

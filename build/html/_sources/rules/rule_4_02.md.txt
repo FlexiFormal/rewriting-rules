@@ -20,6 +20,8 @@ Examples
 ```{rewrite-rule}
 "$x$ is prime or $x$ is greater than $5$"
 
+--- "Or"-AP Aggregation
+
 "$x$ is prime or greater than $5$"
 ```
 

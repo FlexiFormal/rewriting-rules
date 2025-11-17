@@ -23,5 +23,7 @@ Examples
 ```{rewrite-rule}
 "$\{1 \leq i \leq n \mid 1/i < \varepsilon\}$"
 
+--- Relation Guard Reduction
+
 "$\{i \mid 1 \leq i \leq n \text{ and } 1/i < \varepsilon\}$"
 ```

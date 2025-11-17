@@ -20,6 +20,8 @@ Examples
 ```{rewrite-rule}
 "$x$ does not contain $y$ and $x$ does not include $z$"
 
+--- "Neither"-VP Aggregation
+
 "$x$ does neither contain $y$ nor include $z$"
 ```
 

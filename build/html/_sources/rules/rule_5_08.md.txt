@@ -27,5 +27,7 @@ Examples
 ```{rewrite-rule}
 "choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ that is imaginary"
 
+--- "Choose"-AP Comprehension Term Reduction
+
 "choose an imaginary $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

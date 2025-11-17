@@ -13,7 +13,7 @@ i : <Var> = "$i$"
 
 I : <Term> = "$I$"
 
-:noun: := "A :noun: is a @'structure' | 'pair' | 'triple' | ...@ :t: @'with' | 'of' | 'where'@ ..."
+:noun: := "A :noun: is a @('structure' | 'pair' | 'triple' | ...)@ :t: @('with' | 'of' | 'where')@ ..."
 
 "family $(:x:_{:i:})_{:i: \in :I:}$ of :noun:"
 
@@ -30,6 +30,8 @@ Examples
 "edge := "An edge is a pair $\langle v, v' \rangle$ of nodes $v, v'$.""
 
 "family $(e_i)_{i \in I}$ of edges"
+
+--- Family Structure Expansion
 
 "family $(e_i)_{i \in I}$ of edges $e_i := \langle v_i, v'_i \rangle$"
 ```

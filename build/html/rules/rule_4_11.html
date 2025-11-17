@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
-    <link rel="stylesheet" type="text/css" href="../_static/rewriting.css?v=ff58a147" />
+    <link rel="stylesheet" type="text/css" href="../_static/rewriting.css?v=b865d8cc" />
     <script src="../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -34,11 +34,11 @@
 
           <div class="body" role="main">
             
-  <section class="tex2jax_ignore mathjax_ignore" id="rule-4-11-either-ap-aggregation">
+  <section id="rule-4-11-either-ap-aggregation">
 <h1>Rule 4.11: “Either”-AP Aggregation<a class="headerlink" href="#rule-4-11-either-ap-aggregation" title="Link to this heading">¶</a></h1>
-<div class="rewrite-rule-container"><div class="rewrite-line"><span class="placeholder">AP<sub>1</sub></span>, ..., <span class="placeholder">AP<sub>n</sub></span> : <code class="highlight"><span class="n">&lt;AP&gt;</span></code> = "odd", "prime"</div><div class="rewrite-line"><span class="placeholder">t</span> : <code class="highlight"><span class="n">&lt;Term&gt;</span></code> = "<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math>"</div><div class="rewrite-line"><span class="placeholder">t</span> is <span class="placeholder">AP<sub>1</sub></span> or ... or <span class="placeholder">t</span> is <span class="placeholder">AP<sub>n</sub></span> <code class="highlight"><span class="s">and</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s">but</span></code> <span class="placeholder">t</span> is not both <span class="placeholder">AP<sub>1</sub></span> and ... and <span class="placeholder">AP<sub>n</sub></span></div><div class="divider-wrapper"><div class="divider-line"></div><div class="divider-label"><div style="width: 100em;">"Either"-AP Aggregation</div></div></div><div class="rewrite-line"><span class="placeholder">t</span> is either <span class="placeholder">AP<sub>1</sub></span> or ... or <span class="placeholder">AP<sub>n</sub></span></div></div><section id="examples">
+<div class="rewrite-rule-container-wrapper"><div class="rewrite-rule-container"><div class="rewrite-line"><span class="placeholder">AP<sub>1</sub></span>, ..., <span class="placeholder">AP<sub>n</sub></span> : <code class="highlight"><span class="n">&lt;AP&gt;</span></code> = "odd", "prime"</div><div class="rewrite-line"><span class="placeholder">t</span> : <code class="highlight"><span class="n">&lt;Term&gt;</span></code> = "<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math>"</div><div class="rewrite-line"><div class="rewrite-line-nl"><span class="placeholder">t</span> is <span class="placeholder">AP<sub>1</sub></span> or ... or <span class="placeholder">t</span> is <span class="placeholder">AP<sub>n</sub></span> <code class="highlight"><span class="p">(</span><span class="s">and</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s">but</span><span class="p">)</span></code> <span class="placeholder">t</span> is not both <span class="placeholder">AP<sub>1</sub></span> and ... and <span class="placeholder">AP<sub>n</sub></span></div></div><div class="divider-wrapper"><div class="divider-line"></div><div class="divider-label-wrapper"><div class="divider-label">"Either"-AP Aggregation</div></div></div><div class="rewrite-line"><div class="rewrite-line-nl"><span class="placeholder">t</span> is either <span class="placeholder">AP<sub>1</sub></span> or ... or <span class="placeholder">AP<sub>n</sub></span></div></div></div></div><section id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h2>
-<div class="rewrite-rule-container"><div class="rewrite-line"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math> is odd or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math> is prime but <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math> is not both odd or prime</div><div class="rewrite-line"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math> is either odd or prime</div></div></section>
+<div class="rewrite-rule-container-wrapper"><div class="rewrite-rule-container"><div class="rewrite-line"><div class="rewrite-line-nl"><math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math> is odd or <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math> is prime but <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math> is not both odd or prime</div></div><div class="divider-wrapper"><div class="divider-line"></div><div class="divider-label-wrapper"><div class="divider-label">"Either"-AP Aggregation</div></div></div><div class="rewrite-line"><div class="rewrite-line-nl"><math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math> is either odd or prime</div></div></div></div></section>
 </section>
 
 
@@ -95,7 +95,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../05_comprehension_term_reduction.html">Section 5: Comprehension Term Reduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../06_iota_conversion.html">Section 6: <span class="math notranslate nohighlight">\(\iota\)</span>-Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06_iota_conversion.html">Section 6: Iota Conversion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../07_equality_conversion.html">Section 7: Equality Conversion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../08_projection_reduction.html">Section 8: Projection Reduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../09_structure_expansion.html">Section 9: Structure Expansion</a></li>

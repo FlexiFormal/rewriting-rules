@@ -7,7 +7,7 @@ AP : <AP> = "prime"
 
 x : <Term> = "$x$"
 
-"it @is wrong | is false | is not the case | does not hold@ that :x: is :AP:"
+"it @(is wrong | is false | is not the case | does not hold)@ that :x: is :AP:"
 
 --- Modal "False"-AP Reduction
 
@@ -20,6 +20,8 @@ Examples
 
 ```{rewrite-rule}
 "it does not hold that $n$ is prime"
+
+--- Modal "False"-AP Reduction
 
 "$n$ is not prime"
 ```

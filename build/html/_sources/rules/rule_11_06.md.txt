@@ -9,7 +9,7 @@ P : <Var> = "$P$"
 
 |- $\forall :P:.\, :P: \Rightarrow \bot = \neg :P:$
 
-"@if :Prop: then we have | :Prop: entails | :Prop: implies@ a contradiction"
+"@(if :Prop: then we have | :Prop: entails | :Prop: implies)@ a contradiction"
 
 --- Negation Introduction
 
@@ -24,6 +24,8 @@ Examples
 |- $\forall P.\, P \Rightarrow \bot = \neg P$
 
 "if $x$ is a prime number then we have a contradiction"
+
+--- Negation Introduction
 
 "it is wrong that $x$ is a prime number"
 ```

@@ -9,12 +9,10 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
-    <link rel="stylesheet" type="text/css" href="_static/rewriting.css?v=ff58a147" />
+    <link rel="stylesheet" type="text/css" href="_static/rewriting.css?v=b865d8cc" />
     <script src="_static/documentation_options.js?v=5929fcd5"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Rule 5.1: “Then” Comprehension Term Reduction" href="rules/rule_5_01.html" />
@@ -36,29 +34,29 @@
 
           <div class="body" role="main">
             
-  <section class="tex2jax_ignore mathjax_ignore" id="section-5-comprehension-term-reduction">
+  <section id="section-5-comprehension-term-reduction">
 <h1>Section 5: Comprehension Term Reduction<a class="headerlink" href="#section-5-comprehension-term-reduction" title="Link to this heading">¶</a></h1>
 <p>A comprehension term is, in its most general form, an expression of the form
-<span class="math notranslate nohighlight">\(C := \{R[t[y_1, \dots, y_m]] \mid \varphi[y_1, \dots, y_m]\}\)</span>, where <span class="math notranslate nohighlight">\(R\)</span> is a
-<a class="reference internal" href="guarded_identifiers.html"><span class="std std-doc">guarded identifier</span></a>, and <span class="math notranslate nohighlight">\(t\)</span> and <span class="math notranslate nohighlight">\(\varphi\)</span> are a term
-and a (possibly informal) formula, resp., whose free variables are among <span class="math notranslate nohighlight">\(y_1, \dots, y_m\)</span>.
-We consider <span class="math notranslate nohighlight">\(R\)</span> trivial if no relational constraints are
-specified, and we consider <span class="math notranslate nohighlight">\(t\)</span> trivial if it is a plain variable, which lets us classify
+<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mi>:</mi><mo>&#x0003D;</mo><mrow><mi>R</mi><mo stretchy="false">[</mo><mi>t</mi><mo stretchy="false">[</mo><msub><mi>y</mi><mn>1</mn></msub><mo>&#x0002C;</mo><mo>&#x02026;</mo><mo>&#x0002C;</mo><msub><mi>y</mi><mi>m</mi></msub><mo stretchy="false">]</mo><mo stretchy="false">]</mo><mo>&#x02223;</mo><mi>&#x003C6;</mi><mo stretchy="false">[</mo><msub><mi>y</mi><mn>1</mn></msub><mo>&#x0002C;</mo><mo>&#x02026;</mo><mo>&#x0002C;</mo><msub><mi>y</mi><mi>m</mi></msub><mo stretchy="false">]</mo></mrow></mrow></math>, where <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>R</mi></mrow></math> is a
+<a class="reference internal" href="guarded_identifiers.html"><span class="std std-doc">guarded identifier</span></a>, and <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>t</mi></mrow></math> and <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003C6;</mi></mrow></math> are a term
+and a (possibly informal) formula, resp., whose free variables are among <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>&#x0002C;</mo><mo>&#x02026;</mo><mo>&#x0002C;</mo><msub><mi>y</mi><mi>m</mi></msub></mrow></math>.
+We consider <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>R</mi></mrow></math> trivial if no relational constraints are
+specified, and we consider <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>t</mi></mrow></math> trivial if it is a plain variable, which lets us classify
 comprehension terms as</p>
 <ul class="simple">
-<li><p><strong>unguarded</strong> if both <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(t\)</span> are trivial (e.g. “<span class="math notranslate nohighlight">\(\{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}\)</span>”),</p></li>
-<li><p><strong>term-guarded</strong> if just <span class="math notranslate nohighlight">\(t\)</span> is non-trivial (e.g. “<span class="math notranslate nohighlight">\(\{n^2 \mid n \in \mathbb{N}\}\)</span>”),</p></li>
-<li><p><strong>relation-guarded</strong> if just <span class="math notranslate nohighlight">\(R\)</span> is non-trivial (e.g. “<span class="math notranslate nohighlight">\(\{1 \leq i \leq n \mid 1/i &lt; \varepsilon\}\)</span>”), or</p></li>
-<li><p><strong>relation-term-guarded</strong> if both <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(t\)</span> are non-trivial (e.g.
-“<span class="math notranslate nohighlight">\(\{\langle p,n \rangle \in \mathbb{N} \times \mathbb{N} \mid p \text{ is a prime divisor of } n\}\)</span>”).</p></li>
+<li><p><strong>unguarded</strong> if both <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>R</mi></mrow></math> and <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>t</mi></mrow></math> are trivial (e.g. “<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mi>z</mi><mo>&#x02223;</mo><msup><mi>z</mi><mi>n</mi></msup><mo>&#x0003D;</mo><mn>1</mn><mtext>&#x000A0;for&#x000A0;some&#x000A0;</mtext><mi>n</mi><mo>&#x02208;</mo><mi>&#x02115;</mi></mrow></mrow></math>”),</p></li>
+<li><p><strong>term-guarded</strong> if just <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>t</mi></mrow></math> is non-trivial (e.g. “<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>&#x02223;</mo><mi>n</mi><mo>&#x02208;</mo><mi>&#x02115;</mi></mrow></mrow></math>”),</p></li>
+<li><p><strong>relation-guarded</strong> if just <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>R</mi></mrow></math> is non-trivial (e.g. “<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mn>1</mn><mo>&#x02264;</mo><mi>i</mi><mo>&#x02264;</mo><mi>n</mi><mo>&#x02223;</mo><mn>1</mn><mo>&#x0002F;</mo><mi>i</mi><mo>&#x0003C;</mo><mi>&#x003B5;</mi></mrow></mrow></math>”), or</p></li>
+<li><p><strong>relation-term-guarded</strong> if both <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>R</mi></mrow></math> and <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>t</mi></mrow></math> are non-trivial (e.g.
+“<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mi>&#x027E8;</mi><mi>p</mi><mo>&#x0002C;</mo><mi>n</mi><mi>&#x027E9;</mi><mo>&#x02208;</mo><mi>&#x02115;</mi><mi>&#x000D7;</mi><mi>&#x02115;</mi><mo>&#x02223;</mo><mi>p</mi><mtext>&#x000A0;is&#x000A0;a&#x000A0;prime&#x000A0;divisor&#x000A0;of&#x000A0;</mtext><mi>n</mi></mrow></mrow></math>”).</p></li>
 </ul>
 <p>We call a rewriting operation that eliminates a comprehension term from an
 expression a comprehension term reduction.
-If we want to reduce an expression of the form “<span class="math notranslate nohighlight">\(x \in C\)</span>” (or, analogously, the
-verbalized variant “<span class="math notranslate nohighlight">\(x\)</span> is/be an element of <span class="math notranslate nohighlight">\(C\)</span>”), where <span class="math notranslate nohighlight">\(C\)</span> is a comprehension term,
-we have to distinguish several cases depending on the structure of <span class="math notranslate nohighlight">\(C\)</span>.
+If we want to reduce an expression of the form “<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#x02208;</mo><mi>C</mi></mrow></math>” (or, analogously, the
+verbalized variant “<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math> is/be an element of <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi></mrow></math>”), where <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi></mrow></math> is a comprehension term,
+we have to distinguish several cases depending on the structure of <math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi></mrow></math>.
 Moreover, for each case we have to take the
-structure of the sentence that contains the expression “<span class="math notranslate nohighlight">\(x \in C\)</span>” into account,
+structure of the sentence that contains the expression “<math data-mathjax="false" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#x02208;</mo><mi>C</mi></mrow></math>” into account,
 where we distinguish between</p>
 <ul class="simple">
 <li><p><strong>assertion expressions</strong>, i.e. expressions starting with an (optional) <code class="docutils literal notranslate"><span class="pre">then</span></code> (see below),</p></li>
@@ -172,7 +170,7 @@ or proposition phrases.</p>
 <li class="toctree-l2"><a class="reference internal" href="rules/rule_5_21.html">Rule 5.21: Subset-NP Guard Reduction</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="06_iota_conversion.html">Section 6: <span class="math notranslate nohighlight">\(\iota\)</span>-Conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_iota_conversion.html">Section 6: Iota Conversion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_equality_conversion.html">Section 7: Equality Conversion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_projection_reduction.html">Section 8: Projection Reduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="09_structure_expansion.html">Section 9: Structure Expansion</a></li>

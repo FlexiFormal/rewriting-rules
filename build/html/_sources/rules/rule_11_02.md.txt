@@ -27,5 +27,7 @@ Examples
 
 "$x$ does not have no element"
 
+--- "Has"-NP Double Negation Elimination
+
 "$x$ has an element"
 ```

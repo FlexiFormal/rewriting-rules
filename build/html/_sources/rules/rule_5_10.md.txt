@@ -27,5 +27,7 @@ Examples
 ```{rewrite-rule}
 "choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ with $\Re(x) > 0$"
 
+--- "Choose"-PP Comprehension Term Reduction
+
 "choose an $x$ with $x^n = 1$ for some $n \in \mathbb{N}$ and $\Re(x) > 0$"
 ```

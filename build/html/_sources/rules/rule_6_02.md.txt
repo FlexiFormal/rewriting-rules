@@ -1,5 +1,5 @@
-Rule 6.2: $\iota_\subseteq$-Reduction
-=====================================
+Rule 6.2: Iota-Subset Reduction
+===============================
 
 
 ```{rewrite-rule}
@@ -20,6 +20,8 @@ Examples
 
 ```{rewrite-rule}
 "$\{n - 5\} \subseteq \mathbb{Z}$"
+
+--- Iota-Subset Reduction
 
 "$n - 5 \in \mathbb{Z}$"
 ```

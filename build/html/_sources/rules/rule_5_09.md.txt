@@ -27,5 +27,7 @@ Examples
 ```{rewrite-rule}
 "choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ that solves the equation $E$"
 
+--- "Choose"-VP Comprehension Term Reduction
+
 "choose an $x$ that solves the equation $E$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

@@ -27,5 +27,7 @@ Examples
 
 "$x$ is odd or $x$ is even"
 
+--- "Or"-Commutativity Conversion
+
 "$x$ is even or $x$ is odd"
 ```

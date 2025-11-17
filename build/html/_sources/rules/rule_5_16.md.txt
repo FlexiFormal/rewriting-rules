@@ -25,5 +25,7 @@ Examples
 ```{rewrite-rule}
 "assume $\{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\} \subseteq X$"
 
+--- Subset Comprehension Term Reduction
+
 "assume $z \in X$ for all $z$ with $z^n = 1$ for some $n \in \mathbb{N}$"
 ```

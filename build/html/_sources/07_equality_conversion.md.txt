@@ -28,5 +28,7 @@ Let $R^+$ denote the transitive closure of a relation $R$.
 
 "$\bigcup_{n \in \mathbb{N}} R^n$"
 
+--- Equality Conversion
+
 "$R^+$"
 ```

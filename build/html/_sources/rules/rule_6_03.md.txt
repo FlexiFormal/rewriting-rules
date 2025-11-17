@@ -29,5 +29,7 @@ Examples
 
 "$\{p \mid p \text{ is an even prime}\}$"
 
+--- Singleton Conversion
+
 "$\{2\}$"
 ```

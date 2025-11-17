@@ -25,5 +25,7 @@ Examples
 
 "$x$ is prime and $x$ is prime"
 
+--- "And"-Idempotence Reduction
+
 "$x$ is prime"
 ```

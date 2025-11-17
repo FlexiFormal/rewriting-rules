@@ -9,7 +9,7 @@ t : <Term> = "$a$"
 
 AP : <AP> = "applicable in $q$"
 
-":NP: :t: @such that :t: is | with :t: being@ :AP:"
+":NP: :t: @(such that :t: is | with :t: being)@ :AP:"
 
 --- Adjective Variable Reduction
 
@@ -22,6 +22,8 @@ Examples
 
 ```{rewrite-rule}
 "an input symbol $a$ such that $a$ is applicable in $q$"
+
+--- Adjective Variable Reduction
 
 "an input symbol $a$ that is applicable in $q$"
 ```

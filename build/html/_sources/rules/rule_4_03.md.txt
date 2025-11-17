@@ -20,6 +20,8 @@ Examples
 ```{rewrite-rule}
 "$x$ intersects with $y$ and $x$ contains $z$"
 
+--- "And"-VP Aggregation
+
 "$x$ intersects with $y$ and contains $z$"
 ```
 

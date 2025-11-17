@@ -25,5 +25,7 @@ Examples
 ```{rewrite-rule}
 "let $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$"
 
+--- "Let" Comprehension Term Reduction
+
 "let $x$ be an element such that $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

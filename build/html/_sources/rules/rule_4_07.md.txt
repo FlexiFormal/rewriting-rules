@@ -20,5 +20,7 @@ Examples
 ```{rewrite-rule}
 "$n \in \mathbb{Z}$ or $n \in \{ x \in \mathbb{R} \mid x^3 \geq x^2 \}$"
 
+--- "Or"-Element Aggregation
+
 "$n \in \mathbb{Z} \cup \{ x \in \mathbb{R} \mid x^3 \geq x^2 \}$"
 ```

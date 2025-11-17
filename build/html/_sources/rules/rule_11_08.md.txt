@@ -25,5 +25,7 @@ Examples
 
 "$x$ is prime and it is wrong that $x$ is prime"
 
+--- Contradiction Introduction
+
 "we have a contradiction"
 ```

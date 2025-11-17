@@ -28,12 +28,20 @@
     content: "'";
 }
 
-.rewrite-rule-container {
+.rewrite-rule-container-wrapper {
     margin: auto;   /* Center in parent */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 15px; /* Prevent scroll bar from overlapping with last line */
+}
+
+.rewrite-rule-container {
+    display: block;
     width: fit-content;
+}
+
+.rewrite-rule-container-wrapper:not(:last-of-type) {
+    margin-bottom: 30px;
 }
 
 .rewrite-rule-separator {
@@ -45,11 +53,18 @@
 .rewrite-line {
     padding: 1px;
     text-align: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: block ruby;
+}
+
+.rewrite-line-nl {
+    display: inline;
 }
 
 .divider-wrapper {
     display: flex;
-    width: 100%;
     margin-top: -0.35em;
     margin-bottom: -0.5em;
 }
@@ -58,18 +73,21 @@
     height: 2px;
     background-color: black;
     width: 100%;
-    /*margin-top: 0.35em;*/
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.divider-label {
+.divider-label-wrapper {
     display: inline-block;
     margin: 0;
     width: 0;
     overflow: visible;
 }
 
-.divider-label > div {
+.divider-label {
+    width: max-content;
+}
+
+.divider-label-wrapper > div {
     padding-left: 0.3em;
 }

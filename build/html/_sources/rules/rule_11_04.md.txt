@@ -27,5 +27,7 @@ Examples
 
 "$x$ is not not greater than $5$"
 
+--- AP Double Negation Elimination
+
 "$x$ is greater than $5$"
 ```

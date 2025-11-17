@@ -27,5 +27,7 @@ Examples
 ```{rewrite-rule}
 "choose an $x \in \{z \mid z^n = 1 \text{ for some } n \in \mathbb{N}\}$ that is a real number"
 
+--- "Choose"-NP Comprehension Term Reduction
+
 "choose a real number $x$ with $x^n = 1$ for some $n \in \mathbb{N}$"
 ```

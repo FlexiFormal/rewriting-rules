@@ -25,5 +25,7 @@ Examples
 ```{rewrite-rule}
 "$\{n^2 \mid n \in \mathbb{N}\}$"
 
+--- Term Guard Reduction
+
 "$\{z \mid \text{there exist an } n \text{ such that } z = n^2 \text{ and } n \in \mathbb{N}\}$"
 ```
