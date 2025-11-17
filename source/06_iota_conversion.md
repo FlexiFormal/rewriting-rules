@@ -1,5 +1,5 @@
-Section 6: $\iota$-Conversion
-=============================
+Section 6: Iota Conversion
+==========================
 
 In expressions that involve references to singleton sets we can apply the $\iota$-operator
 to convert those references to references to the (unique) element of those sets.

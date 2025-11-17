@@ -1,5 +1,5 @@
-Rule 6.2: $\iota_\subseteq$-Reduction
-=====================================
+Rule 6.2: Iota-Subset Reduction
+===============================
 
 
 ```{rewrite-rule}

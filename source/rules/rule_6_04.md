@@ -1,5 +1,5 @@
-Rule 6.4: Parametrized $\iota$-Conversion
-=========================================
+Rule 6.4: Parametrized Iota Conversion
+======================================
 
 
 ```{rewrite-rule}

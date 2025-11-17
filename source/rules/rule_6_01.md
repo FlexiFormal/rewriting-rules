@@ -1,5 +1,5 @@
-Rule 6.1: $\iota_\in$-Reduction
-===============================
+Rule 6.1: Iota-Element Reduction
+================================
 
 
 ```{rewrite-rule}
