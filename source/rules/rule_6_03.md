@@ -19,6 +19,10 @@ A : <Term> = "$\{p \mid p \text{ is an even prime}\}$"
 ```
 
 
+````{note}
+Note that this is just a special case of rule [Rule 7](07_equality_conversion.md).
+````
+
 Examples
 --------
 
